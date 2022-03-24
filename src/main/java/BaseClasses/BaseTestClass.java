@@ -1,5 +1,7 @@
 package BaseClasses;
 
+import java.io.IOException;
+
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
@@ -7,12 +9,14 @@ import org.testng.annotations.BeforeSuite;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
 
 import pages.CabsPage;
 import pages.GiftCardsPage;
 import pages.HotelsPage;
 import pages.LandingPage;
 import pages.SearchPageCabs;
+import utilities.CaptureScreenshot;
 import utilities.DriverSetup;
 import utilities.ExtentReportManager;
 
@@ -40,12 +44,18 @@ public class BaseTestClass {
 	}
 	
 	@AfterMethod
-	public void setTestResult(ITestResult result) {
+	public void setTestResult(ITestResult result) throws IOException {
+		
+		String	screenshot = CaptureScreenshot.captureScreenShot(driver, CaptureScreenshot.generateFileName(result));
+		
 		if(result.getStatus() == ITestResult.FAILURE) {
-			logger.fail(result.getName());
-			logger.fail(result.getThrowable());
+			logger.log(Status.FAIL,result.getName()+"  : FAILLED");
+			logger.log(Status.FAIL,result.getThrowable());
+			
+			logger.fail("Screenshot : "+ logger.addScreenCaptureFromPath(screenshot));
 		}else if(result.getStatus() == ITestResult.SUCCESS) {
-			logger.pass(result.getName());
+			logger.log(Status.PASS, result.getName() + "  : PASSED");
+			logger.pass("Screenshot : "+ logger.addScreenCaptureFromPath(screenshot));
 		}else if(result.getStatus() == ITestResult.SKIP) {
 			logger.skip(result.getName());
 		}

@@ -5,7 +5,7 @@ import java.util.Hashtable;
 import org.testng.annotations.Test;
 
 import BaseClasses.BaseTestClass;
-import pages.PagesBaseClass;
+import BaseClasses.PagesBaseClass;
 
 public class SearchCabsFromToDataDrivenTest extends BaseTestClass{
 

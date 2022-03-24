@@ -3,8 +3,8 @@ package testCases.GiftCardPageSelection;
 import org.testng.annotations.Test;
 
 import BaseClasses.BaseTestClass;
+import BaseClasses.PagesBaseClass;
 import pages.GiftCardsPage;
-import pages.PagesBaseClass;
 
 public class NavigateGiftCardsPageTest extends BaseTestClass{
 	

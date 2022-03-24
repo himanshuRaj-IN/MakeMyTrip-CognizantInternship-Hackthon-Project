@@ -3,7 +3,7 @@ package testCases.SearchButtonFunctionalityCabsPage;
 import org.testng.annotations.Test;
 
 import BaseClasses.BaseTestClass;
-import pages.PagesBaseClass;
+import BaseClasses.PagesBaseClass;
 
 public class SearchcabsfromdelhitomanaliTest extends BaseTestClass{
 	

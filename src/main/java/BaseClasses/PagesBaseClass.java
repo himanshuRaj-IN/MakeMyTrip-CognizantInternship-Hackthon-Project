@@ -1,4 +1,4 @@
-package pages;
+package BaseClasses;
 
 
 import java.util.Properties;
@@ -9,6 +9,8 @@ import org.testng.Assert;
 
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
+
+import pages.LandingPage;
 import utilities.ReadPropertiesFile;
 
 public class PagesBaseClass {
@@ -43,7 +45,6 @@ public class PagesBaseClass {
 	}
 
 	public void reportPass(String reportString) {
-		//Assert.assertTrue(true);
 		logger.log(Status.PASS, reportString);
 	}
 

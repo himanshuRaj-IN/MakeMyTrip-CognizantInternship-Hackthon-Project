@@ -15,6 +15,7 @@ import org.testng.Assert;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 
+import BaseClasses.PagesBaseClass;
 import net.bytebuddy.utility.privilege.GetMethodAction;
 import utilities.ReadPropertiesFile;
 

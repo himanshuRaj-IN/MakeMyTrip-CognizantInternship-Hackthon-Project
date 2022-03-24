@@ -18,6 +18,8 @@ import org.testng.Assert;
 
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
+
+import BaseClasses.PagesBaseClass;
 import utilities.ReadPropertiesFile;
 
 public class CabsPage extends PagesBaseClass {
