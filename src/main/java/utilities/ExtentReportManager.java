@@ -13,8 +13,8 @@ public class ExtentReportManager {
 		public static ExtentReports getReportInstance(){
 			
 			if(report == null){
-//				String reportName = DateUtil.getTimeStamp() + ".html";
-				String reportName = "TestReport" + ".html";
+				String reportName = DateUtil.getTimeStamp() + ".html";
+//				String reportName = "TestReport" + ".html";
 				ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter(".\\test-output\\"+ reportName);
 				report =  new ExtentReports();
 				report.attachReporter(htmlReporter);

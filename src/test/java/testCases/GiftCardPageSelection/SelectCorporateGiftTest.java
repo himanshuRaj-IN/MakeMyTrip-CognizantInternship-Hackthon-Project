@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 import com.aventstack.extentreports.ExtentTest;
 
 import BaseClasses.BaseTestClass;
-import pages.PagesBaseClass;
+import BaseClasses.PagesBaseClass;
 import utilities.ReadPropertiesFile;
 
 public class SelectCorporateGiftTest extends BaseTestClass {
