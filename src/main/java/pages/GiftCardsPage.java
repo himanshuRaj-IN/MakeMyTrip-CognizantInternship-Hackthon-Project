@@ -29,6 +29,18 @@ public class GiftCardsPage extends PagesBaseClass{
 	@FindBy(xpath = "//p[contains(text(),'Corporate Gift Card')]")
 	WebElement CorporateGiftCard_Element;
 	
+	@FindBy(xpath="//input[@name=\"senderName\"]")
+	WebElement SendersName_Element;
+	
+	@FindBy(xpath="//input[@name=\"senderMobileNo\"]")
+	WebElement SendersMobileNum_Element;
+	
+	@FindBy(xpath="//input[@name=\"senderEmailId\"]")
+	WebElement sendersEmailiD_Element;
+	
+	@FindBy(xpath="//button")
+	WebElement buyNowButton_Element;
+	
 	public void shiftDriverToCardsPage() {
 		try {
 		logger.log(Status.INFO, "Shifting driver focus to the Gift cards page ");
@@ -64,4 +76,53 @@ public class GiftCardsPage extends PagesBaseClass{
 		}
 		
 	}
+	
+	/********Enter  Senders Name in corporate gift card************/
+	public void enterSendersName() {
+		try {
+			
+			 SendersName_Element.sendKeys("Pushkar");
+			 
+			logger.log(Status.PASS, "Entered the Senders Name");
+		} catch (Exception e) {
+			reportFail(e.getMessage());
+		}
+	}
+	
+	/***********Enter Mobile No in Corporate Gift Card**********/
+	public void enterMobileNo() {
+		try {
+			
+			SendersMobileNum_Element.sendKeys("8271987994");
+			 
+			logger.log(Status.PASS, "Entered the Mobile No");
+		} catch (Exception e) {
+			reportFail(e.getMessage());
+		}
+	}
+	/********Enter Valid Email Id in Corporate Gift Card********/
+	public void enterValidEmailId() {
+		try {
+			
+			sendersEmailiD_Element.sendKeys("singhpushkar108@gmail.com");
+			 
+			logger.log(Status.PASS, "Entered the Valid Email ID");
+		} catch (Exception e) {
+			reportFail(e.getMessage());
+		}
+	}
+	
+	/*******Click on Buy Now Button*******************/
+	public void clickonBuyNowButton() {
+ try {
+			
+	  buyNowButton_Element.click();
+			 
+			logger.log(Status.PASS, "Clicked on Buy Now Button");
+		} catch (Exception e) {
+			reportFail(e.getMessage());
+		}
+	}
+			
+			
 }
