@@ -1,10 +1,11 @@
 package testCases.CabsPageSelectionFromMenu;
 
+
 import org.testng.annotations.Test;
 import BaseClasses.BaseTestClass;
+import BaseClasses.PagesBaseClass;
 import pages.CabsPage;
 import pages.LandingPage;
-import pages.PagesBaseClass;
 
 
 public class CheckCabsOption extends BaseTestClass{

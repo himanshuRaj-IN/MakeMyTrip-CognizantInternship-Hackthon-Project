@@ -2,6 +2,7 @@ package pages;
 
 import java.text.SimpleDateFormat;
 import java.time.Duration;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 import java.util.Properties;
@@ -18,6 +19,8 @@ import org.testng.Assert;
 
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
+
+import BaseClasses.PagesBaseClass;
 import utilities.ReadPropertiesFile;
 
 public class CabsPage extends PagesBaseClass {
@@ -250,42 +253,51 @@ public class CabsPage extends PagesBaseClass {
 	}
 
 	/******************** Select Departure Data ****************************/
-	public void selectDepatureDate(String date) {
-		try {
-			Thread.sleep(1000);
-			Date currentDate = new Date();
-			SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
-			Date expectedDate = dateFormat.parse(date);
+		public void selectDepatureDate(String date) {
+			try {				
+				Thread.sleep(1000);
+				SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
+				Date expectedDate = dateFormat.parse(date);
 
-			String day = new SimpleDateFormat("dd").format(expectedDate);
-			String month = new SimpleDateFormat("MMMM").format(expectedDate);
-			String year = new SimpleDateFormat("yyyy").format(expectedDate);
+				String day = new SimpleDateFormat("dd").format(expectedDate);
+				String month = new SimpleDateFormat("MMMM").format(expectedDate);
+				String year = new SimpleDateFormat("yyyy").format(expectedDate);
 
-			String expectedMonthYear = month + " " + year;
+				String expectedMonth = month + " " + year;
 
-			int dayINT = Integer.parseInt(day);
+				int dayINT = Integer.parseInt(day);
 
-			while (true) {
-				String displayDate = monthYear_Element.getText();
-				if (expectedMonthYear.equals(displayDate)) {
-					String xpath = "(//div[contains(text(),'" + dayINT + "')and @ role='gridcell'])[1]";
-					driver.findElement(By.xpath(xpath)).click();
+				while (true) {
+					String gotFromWeb = monthYear_Element.getText();
+					SimpleDateFormat formatter = new SimpleDateFormat("MMMM yyyy");
+					Date fgotmonth = formatter.parse(gotFromWeb);
+					Date ftogoMonth = formatter.parse(expectedMonth);
+					
+					
+					Calendar cal1 = Calendar.getInstance();
+					Calendar cal2 = Calendar.getInstance();
+					cal1.setTime(fgotmonth);
+					cal2.setTime(ftogoMonth);
+					if(cal1.get(Calendar.MONTH) == cal2.get(Calendar.MONTH)) {
+						String xpath = "(//div[contains(text(),'" + dayINT + "')and @ role='gridcell'])[1]";
+						driver.findElement(By.xpath(xpath)).click();
+						break;
+					}
+					else if(cal1.get(Calendar.MONTH) < cal2.get(Calendar.MONTH)) {
+						logger.log(Status.INFO, "Changing Calender month.");
+						nextMonthButton_Element.click();
+					}else if(cal1.get(Calendar.MONTH) > cal2.get(Calendar.MONTH)) {
+						logger.log(Status.INFO, "Changing Calender month.");
+						previousMonthButton_Element.click();
+					}
 
-					break;
-				} else if (expectedDate.compareTo(currentDate) > 0) {
-					nextMonthButton_Element.click();
-				} else {
-					previousMonthButton_Element.click();
 				}
-
+				logger.log(Status.PASS, "Departure Date id Slelected to " + date);
+			} catch (Exception e) {
+				reportFail(e.getMessage());
 			}
-			logger.log(Status.PASS, "Departure Date id Slelected to " + date);
-		} catch (Exception e) {
-			reportFail(e.getMessage());
 		}
-
-	}
-
+		
 	/******************** Verify Departure Data ****************************/
 	public void verifyDepatureDate(String ExpectedDate) {
 		try {

@@ -15,6 +15,7 @@ import org.testng.Assert;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 
+import BaseClasses.PagesBaseClass;
 import net.bytebuddy.utility.privilege.GetMethodAction;
 import utilities.ReadPropertiesFile;
 
@@ -39,7 +40,7 @@ public class SearchPageCabs extends PagesBaseClass {
 	@FindBy(xpath = "//p[text()='Price']/span")
 	WebElement priceFilter_Element;
 	
-	@FindBys(@FindBy(xpath="//p[text()='₹ ' and @class='font28 latoBlack blackText ']"))
+	@FindBys(@FindBy(xpath="//p[@class ='font28 latoBlack blackText ']"))
 	public List<WebElement> price_Elements;
 	
 	
@@ -81,6 +82,8 @@ public class SearchPageCabs extends PagesBaseClass {
 			List<Integer> prices = new ArrayList<Integer>();
 			for (WebElement element	 : price_Elements) {
 				String temp = element.getText();
+				System.out.println(temp);
+				
 				temp = temp.replace(",", "");
 				temp = temp.substring(2);
 				prices.add(Integer.parseInt(temp));
@@ -93,11 +96,15 @@ public class SearchPageCabs extends PagesBaseClass {
 					flag= false;
 				}				
 			}
-								
+			
+			for (Integer price : prices) {
+				logger.log(Status.INFO, "Available Cabs at Price : "+Integer.toString(price));
+			}
 			Assert.assertEquals(true, flag);
 			logger.log(Status.PASS, "Price verified");
 			logger.log(Status.PASS,"Lowest Price Available is : "+prices.get(0));
 			System.out.println(prices);
+			
 		} catch (Exception e) {
 			reportFail(e.getMessage());
 		}
