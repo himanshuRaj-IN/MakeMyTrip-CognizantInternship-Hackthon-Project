@@ -44,9 +44,33 @@ public class GiftCardsPage extends PagesBaseClass {
 
 	@FindBy(xpath = "//button")
 	WebElement buyNowButton_Element;
-	
+
 	@FindBy(xpath = "//span[text()='Payment options']")
 	WebElement paymentOptionLabel_Element;
+
+	@FindBy(xpath = "//p[@class='red-text font11 append-top5']")
+	WebElement errorMessageDisplay_Element;
+	
+	@FindBy(xpath = "//p[@class='red-text font11 append-top5']")
+	WebElement mobileNumbererrorMessageDisplay_Element;
+	
+	@FindBy(xpath = "//p[@class='red-text font11 append-top5']")
+	WebElement emptycredentials_Element;
+	
+	@FindBy(xpath = "//p[@class='red-text font11 append-top5']")
+	WebElement sendersDetailsWithoutName_Element ;
+	
+	
+	@FindBy(xpath = "//p[@class='red-text font11 append-top5']")
+	WebElement sendersDetailsWithoutMobileNumber_Element ;
+	
+	
+	@FindBy(xpath = "//p[@class='red-text font11 append-top5']")
+	WebElement sendersDetailsWithoutEmail_Element ;
+	
+	
+	
+	
 
 	public void shiftDriverToCardsPage() {
 		try {
@@ -129,17 +153,17 @@ public class GiftCardsPage extends PagesBaseClass {
 			reportFail(e.getMessage());
 		}
 	}
-	
+
 	/*************** Verify payment page *******************/
 	public boolean isRedirectedToPaymentPage() {
 		try {
 			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 			wait.until(ExpectedConditions.visibilityOf(paymentOptionLabel_Element));
 			String str = paymentOptionLabel_Element.getText();
-			if(str.equals("Payment options")) {
+			if (str.equals("Payment options")) {
 				logger.log(Status.PASS, "Redirected to the payment page.");
 				return true;
-			}else {
+			} else {
 				logger.log(Status.INFO, "Redirected to the payment page Failled .");
 				return false;
 			}
@@ -149,4 +173,89 @@ public class GiftCardsPage extends PagesBaseClass {
 		return false;
 	}
 
+	/************** get Email Error Message **************/
+	public String getEmailErrorMessage() {
+		try {
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+			wait.until(ExpectedConditions.visibilityOf(errorMessageDisplay_Element));
+			String str = errorMessageDisplay_Element.getText();
+			return str;
+
+		} catch (Exception e) {
+			reportFail(e.getMessage());
+		}
+		return null;
+	}
+	/************** get Mobile Number Error Message **************/
+	public String getMobileNumberErrorMessage() {
+		try {
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+			wait.until(ExpectedConditions.visibilityOf(mobileNumbererrorMessageDisplay_Element));
+			String str = mobileNumbererrorMessageDisplay_Element.getText();
+			return str;
+
+		} catch (Exception e) {
+			reportFail(e.getMessage());
+		}
+		return null;
+	}
+	
+	/*********** Empty Credentials Error Message***********/
+	public String emptyCredentialsErrorMessage() {
+		try {
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+			wait.until(ExpectedConditions.visibilityOf(emptycredentials_Element));
+			String str = emptycredentials_Element.getText();
+			return str;
+
+		} catch (Exception e) {
+			reportFail(e.getMessage());
+		}
+		return null;
+	}
+	
+	/*************Senders Details Without Name****************/
+
+	public String CredentialsWithoutNameErrorMessage() {
+		try {
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+			wait.until(ExpectedConditions.visibilityOf(sendersDetailsWithoutName_Element));
+			String str = sendersDetailsWithoutName_Element.getText();
+			return str;
+
+		} catch (Exception e) {
+			reportFail(e.getMessage());
+		}
+		return null;
+	}
+	/*********Senders Details Without Mobile Number *********/
+	
+	public String CredentialsWithoutMobileNumErrorMessage() {
+		try {
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+			wait.until(ExpectedConditions.visibilityOf(sendersDetailsWithoutMobileNumber_Element));
+			String str = sendersDetailsWithoutMobileNumber_Element.getText();
+			return str;
+
+		} catch (Exception e) {
+			reportFail(e.getMessage());
+		}
+		return null;
+	}
+	
+/*********Senders Details Without Email Id *********/
+	
+	public String CredentialsWithoutEmailErrorMessage() {
+		try {
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+			wait.until(ExpectedConditions.visibilityOf(sendersDetailsWithoutEmail_Element ));
+			String str = sendersDetailsWithoutEmail_Element .getText();
+			return str;
+
+		} catch (Exception e) {
+			reportFail(e.getMessage());
+		}
+		return null;
+	}
+	
 }
