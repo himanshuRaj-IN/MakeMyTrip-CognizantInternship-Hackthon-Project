@@ -20,9 +20,10 @@ public class SendersDetailsWithVaildEmailTest extends BaseTestClass {
 		giftCardsPage.verifyGiftCardsPageURL();
 		giftCardsPage.clickOnCorporateGiftCard();
 
-		giftCardsPage.enterSendersName();
-		giftCardsPage.enterMobileNo();
-		giftCardsPage.enterValidEmailId();
+		giftCardsPage.enterSendersName("Pushkar Singh");
+		giftCardsPage.enterMobileNo("7002041998");
+		giftCardsPage.enterValidEmailId("xyz@gmail.com");
+		Thread.sleep(5000);
 		giftCardsPage.clickonBuyNowButton();
 		boolean flag = giftCardsPage.isRedirectedToPaymentPage();
 		Assert.assertEquals(flag, true);

@@ -85,10 +85,10 @@ public class GiftCardsPage extends PagesBaseClass {
 	}
 
 	/******** Enter Senders Name in corporate gift card ************/
-	public void enterSendersName() {
+	public void enterSendersName(String Name) {
 		try {
 
-			SendersName_Element.sendKeys("Pushkar");
+			SendersName_Element.sendKeys(Name);
 
 			logger.log(Status.PASS, "Entered the Senders Name");
 		} catch (Exception e) {
@@ -97,10 +97,10 @@ public class GiftCardsPage extends PagesBaseClass {
 	}
 
 	/*********** Enter Mobile No in Corporate Gift Card **********/
-	public void enterMobileNo() {
+	public void enterMobileNo(String MobileNumber) {
 		try {
 
-			SendersMobileNum_Element.sendKeys("8271987994");
+			SendersMobileNum_Element.sendKeys(MobileNumber);
 			logger.log(Status.PASS, "Entered the Mobile No");
 		} catch (Exception e) {
 			reportFail(e.getMessage());
@@ -108,10 +108,10 @@ public class GiftCardsPage extends PagesBaseClass {
 	}
 
 	/******** Enter Valid Email Id in Corporate Gift Card ********/
-	public void enterValidEmailId() {
+	public void enterValidEmailId(String emailId) {
 		try {
 
-			sendersEmailiD_Element.sendKeys("singhpushkar108@gmail.com");
+			sendersEmailiD_Element.sendKeys(emailId);
 
 			logger.log(Status.PASS, "Entered the Valid Email ID");
 		} catch (Exception e) {
