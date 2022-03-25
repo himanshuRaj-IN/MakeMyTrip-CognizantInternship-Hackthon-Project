@@ -57,6 +57,18 @@ public class GiftCardsPage extends PagesBaseClass {
 	@FindBy(xpath = "//p[@class='red-text font11 append-top5']")
 	WebElement emptycredentials_Element;
 	
+	@FindBy(xpath = "//p[@class='red-text font11 append-top5']")
+	WebElement sendersDetailsWithoutName_Element ;
+	
+	
+	@FindBy(xpath = "//p[@class='red-text font11 append-top5']")
+	WebElement sendersDetailsWithoutMobileNumber_Element ;
+	
+	
+	@FindBy(xpath = "//p[@class='red-text font11 append-top5']")
+	WebElement sendersDetailsWithoutEmail_Element ;
+	
+	
 	
 	
 
@@ -201,4 +213,49 @@ public class GiftCardsPage extends PagesBaseClass {
 		}
 		return null;
 	}
+	
+	/*************Senders Details Without Name****************/
+
+	public String CredentialsWithoutNameErrorMessage() {
+		try {
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+			wait.until(ExpectedConditions.visibilityOf(sendersDetailsWithoutName_Element));
+			String str = sendersDetailsWithoutName_Element.getText();
+			return str;
+
+		} catch (Exception e) {
+			reportFail(e.getMessage());
+		}
+		return null;
+	}
+	/*********Senders Details Without Mobile Number *********/
+	
+	public String CredentialsWithoutMobileNumErrorMessage() {
+		try {
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+			wait.until(ExpectedConditions.visibilityOf(sendersDetailsWithoutMobileNumber_Element));
+			String str = sendersDetailsWithoutMobileNumber_Element.getText();
+			return str;
+
+		} catch (Exception e) {
+			reportFail(e.getMessage());
+		}
+		return null;
+	}
+	
+/*********Senders Details Without Email Id *********/
+	
+	public String CredentialsWithoutEmailErrorMessage() {
+		try {
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+			wait.until(ExpectedConditions.visibilityOf(sendersDetailsWithoutEmail_Element ));
+			String str = sendersDetailsWithoutEmail_Element .getText();
+			return str;
+
+		} catch (Exception e) {
+			reportFail(e.getMessage());
+		}
+		return null;
+	}
+	
 }

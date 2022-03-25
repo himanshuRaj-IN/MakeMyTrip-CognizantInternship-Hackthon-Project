@@ -8,12 +8,10 @@ import com.aventstack.extentreports.Status;
 import BaseClasses.BaseTestClass;
 import BaseClasses.PagesBaseClass;
 
-public class SendersDetailsWithInvalidMobileNum extends BaseTestClass {
-
-	
+public class SendersDetailsWithoutNameTest extends BaseTestClass {
 	@Test
-	public void sendersDetailsWithInValidMobileNumber() throws InterruptedException {
-		logger = report.createTest("Senders Details With InValid Mobile Number");
+	public void sendersDetailsWithoutName() throws InterruptedException {
+		logger = report.createTest("Senders Details Without Name");
 		PagesBaseClass objPagesBaseClass = new PagesBaseClass(driver, logger);
 		landingPage = objPagesBaseClass.OpenApplication();
 		landingPage.closeLoginPopUp();
@@ -23,15 +21,14 @@ public class SendersDetailsWithInvalidMobileNum extends BaseTestClass {
 		giftCardsPage.verifyGiftCardsPageURL();
 		giftCardsPage.clickOnCorporateGiftCard();
 
-		giftCardsPage.enterSendersName("Pushkar Singh");
-		giftCardsPage.enterMobileNo("700204199899999");
-		giftCardsPage.enterValidEmailId("xyz@gmail.com");
+		giftCardsPage.enterSendersName("");
+		giftCardsPage.enterMobileNo("7002041998");
+		giftCardsPage.enterValidEmailId("singhpushkar108@gmail.com");
 
 		giftCardsPage.clickonBuyNowButton();
-		String actualString = giftCardsPage.getMobileNumberErrorMessage();
-		Assert.assertEquals(actualString, "Please enter a valid mobile number");
+		String actualString = giftCardsPage. CredentialsWithoutNameErrorMessage();
+		Assert.assertEquals(actualString, "This is a mandatory field");
 		logger.log(Status.PASS, "Error Message : " + actualString);
-		
 		driver.close();
 		driver.switchTo().window(currWin);
 	}

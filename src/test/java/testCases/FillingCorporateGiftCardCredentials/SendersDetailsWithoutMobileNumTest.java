@@ -8,12 +8,12 @@ import com.aventstack.extentreports.Status;
 import BaseClasses.BaseTestClass;
 import BaseClasses.PagesBaseClass;
 
-public class EmptySendersDetailsTest extends BaseTestClass {
+public class SendersDetailsWithoutMobileNumTest extends BaseTestClass{
 	
 	
 	@Test
-	public void EmptysendersdetailsTest() throws InterruptedException {
-		logger = report.createTest(" Blank Senders Details Check");
+	public void sendersDetailsWithoutMobileNum() throws InterruptedException {
+		logger = report.createTest("Senders Details Without Mobile Number");
 		PagesBaseClass objPagesBaseClass = new PagesBaseClass(driver, logger);
 		landingPage = objPagesBaseClass.OpenApplication();
 		landingPage.closeLoginPopUp();
@@ -23,17 +23,17 @@ public class EmptySendersDetailsTest extends BaseTestClass {
 		giftCardsPage.verifyGiftCardsPageURL();
 		giftCardsPage.clickOnCorporateGiftCard();
 
-		giftCardsPage.enterSendersName("");
+		giftCardsPage.enterSendersName("Pushkar Singh");
 		giftCardsPage.enterMobileNo("");
-		giftCardsPage.enterValidEmailId("");
+		giftCardsPage.enterValidEmailId("singhpushkar108@gmail.com");
 
 		giftCardsPage.clickonBuyNowButton();
-		String actualString = giftCardsPage.emptyCredentialsErrorMessage();
+		String actualString = giftCardsPage.CredentialsWithoutMobileNumErrorMessage();
 		Assert.assertEquals(actualString, "This is a mandatory field");
 		logger.log(Status.PASS, "Error Message : " + actualString);
+		Thread.sleep(5000);
 		driver.close();
 		driver.switchTo().window(currWin);
 	}
-	
 
 }
