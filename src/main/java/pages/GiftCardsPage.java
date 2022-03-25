@@ -44,11 +44,11 @@ public class GiftCardsPage extends PagesBaseClass {
 
 	@FindBy(xpath = "//button")
 	WebElement buyNowButton_Element;
-	
+
 	@FindBy(xpath = "//span[text()='Payment options']")
 	WebElement paymentOptionLabel_Element;
-	
-	@FindBy(xpath="//p[@class='red-text font11 append-top5']")
+
+	@FindBy(xpath = "//p[@class='red-text font11 append-top5']")
 	WebElement errorMessageDisplay_Element;
 
 	public void shiftDriverToCardsPage() {
@@ -132,17 +132,17 @@ public class GiftCardsPage extends PagesBaseClass {
 			reportFail(e.getMessage());
 		}
 	}
-	
+
 	/*************** Verify payment page *******************/
 	public boolean isRedirectedToPaymentPage() {
 		try {
 			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 			wait.until(ExpectedConditions.visibilityOf(paymentOptionLabel_Element));
 			String str = paymentOptionLabel_Element.getText();
-			if(str.equals("Payment options")) {
+			if (str.equals("Payment options")) {
 				logger.log(Status.PASS, "Redirected to the payment page.");
 				return true;
-			}else {
+			} else {
 				logger.log(Status.INFO, "Redirected to the payment page Failled .");
 				return false;
 			}
@@ -151,24 +151,18 @@ public class GiftCardsPage extends PagesBaseClass {
 		}
 		return false;
 	}
-	/**************Invalid Error Message Display**************/
-	public boolean displayingErrorMessage() {
+
+	/************** get Email Error Message **************/
+	public String getEmailErrorMessage() {
 		try {
-			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
 			wait.until(ExpectedConditions.visibilityOf(errorMessageDisplay_Element));
 			String str = errorMessageDisplay_Element.getText();
-			System.out.println(str);
-			if(str.equals("Please enter a valid Email id.")) {
-				logger.log(Status.PASS, "Error message : "+str);
-				return true;
-			}else {
-				logger.log(Status.PASS, "Error message : "+str);
-				return false;
-			}
+			return str;
+
 		} catch (Exception e) {
 			reportFail(e.getMessage());
 		}
-		return false;
+		return null;
 	}
 }
-

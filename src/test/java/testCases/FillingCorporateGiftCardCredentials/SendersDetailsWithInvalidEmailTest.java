@@ -3,12 +3,13 @@ package testCases.FillingCorporateGiftCardCredentials;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import com.aventstack.extentreports.Status;
+
 import BaseClasses.BaseTestClass;
 import BaseClasses.PagesBaseClass;
 
-public class SendersDetailsWithInvalidEmailTest  extends BaseTestClass {
-	
-	
+public class SendersDetailsWithInvalidEmailTest extends BaseTestClass {
+
 	@Test
 	public void sendersDetailsWithInValidEmail() throws InterruptedException {
 		logger = report.createTest("Senders Details With InValid Email");
@@ -24,10 +25,11 @@ public class SendersDetailsWithInvalidEmailTest  extends BaseTestClass {
 		giftCardsPage.enterSendersName("Pushkar Singh");
 		giftCardsPage.enterMobileNo("7002041998");
 		giftCardsPage.enterValidEmailId("xyzgmail.com");
-		
+
 		giftCardsPage.clickonBuyNowButton();
-		boolean flag = giftCardsPage.displayingErrorMessage();
-		Assert.assertEquals(flag, true);
+		String actualString = giftCardsPage.getEmailErrorMessage();
+		Assert.assertEquals(actualString, "Please enter a valid Email id.");
+		logger.log(Status.PASS, "Error Message : " + actualString);
 		driver.close();
 		driver.switchTo().window(currWin);
 	}
