@@ -4,6 +4,8 @@ import java.awt.Window;
 import java.util.List;
 import java.util.Properties;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -24,8 +26,8 @@ public class GiftCardsPage extends PagesBaseClass{
 		
 	}
 	
-	@FindBy(xpath = "//body/div[@id='root']/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[3]/ul[1]/li[3]/div[1]/img[1]")
-	WebElement CorporateGiftCardpara_Element;
+	@FindBy(xpath = "//p[contains(text(),'Corporate Gift Card')]")
+	WebElement CorporateGiftCard_Element;
 	
 	public void shiftDriverToCardsPage() {
 		try {
@@ -54,8 +56,8 @@ public class GiftCardsPage extends PagesBaseClass{
 	/******************** Select corporate Gift Card******************************/
 	public void clickOnCorporateGiftCard() {
 		try {
-	
-			CorporateGiftCardpara_Element.click();
+			JavascriptExecutor executor = (JavascriptExecutor)driver;
+			executor.executeScript("arguments[0].click();", CorporateGiftCard_Element);
 			logger.log(Status.PASS, "Clicked on corporate Gift Card");
 		} catch (Exception e) {
 			reportFail(e.getMessage());
