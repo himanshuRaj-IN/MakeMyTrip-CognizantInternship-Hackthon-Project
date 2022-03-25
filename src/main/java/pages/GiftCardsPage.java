@@ -50,6 +50,15 @@ public class GiftCardsPage extends PagesBaseClass {
 
 	@FindBy(xpath = "//p[@class='red-text font11 append-top5']")
 	WebElement errorMessageDisplay_Element;
+	
+	@FindBy(xpath = "//p[@class='red-text font11 append-top5']")
+	WebElement mobileNumbererrorMessageDisplay_Element;
+	
+	@FindBy(xpath = "//p[@class='red-text font11 append-top5']")
+	WebElement emptycredentials_Element;
+	
+	
+	
 
 	public void shiftDriverToCardsPage() {
 		try {
@@ -158,6 +167,33 @@ public class GiftCardsPage extends PagesBaseClass {
 			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
 			wait.until(ExpectedConditions.visibilityOf(errorMessageDisplay_Element));
 			String str = errorMessageDisplay_Element.getText();
+			return str;
+
+		} catch (Exception e) {
+			reportFail(e.getMessage());
+		}
+		return null;
+	}
+	/************** get Mobile Number Error Message **************/
+	public String getMobileNumberErrorMessage() {
+		try {
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+			wait.until(ExpectedConditions.visibilityOf(mobileNumbererrorMessageDisplay_Element));
+			String str = mobileNumbererrorMessageDisplay_Element.getText();
+			return str;
+
+		} catch (Exception e) {
+			reportFail(e.getMessage());
+		}
+		return null;
+	}
+	
+	/*********** Empty Credentials Error Message***********/
+	public String emptyCredentialsErrorMessage() {
+		try {
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+			wait.until(ExpectedConditions.visibilityOf(emptycredentials_Element));
+			String str = emptycredentials_Element.getText();
 			return str;
 
 		} catch (Exception e) {
