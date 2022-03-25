@@ -3,10 +3,11 @@ package testCases.HotelTab;
 import org.testng.annotations.Test;
 
 import BaseClasses.BaseTestClass;
+import BaseClasses.PagesBaseClass;
 import pages.CabsPage;
 import pages.HotelsPage;
 import pages.LandingPage;
-import pages.PagesBaseClass;
+
 
 public class VerifyUrlAfterClickOnHotel extends BaseTestClass{
 	LandingPage landingPage;

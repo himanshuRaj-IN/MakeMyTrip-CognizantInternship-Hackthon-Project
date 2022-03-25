@@ -3,9 +3,10 @@ package testCases.HotelTab;
 import org.testng.annotations.Test;
 
 import BaseClasses.BaseTestClass;
+import BaseClasses.PagesBaseClass;
 import pages.CabsPage;
 import pages.LandingPage;
-import pages.PagesBaseClass;
+
 
 public class GetListOfAdultOption extends BaseTestClass {
 
