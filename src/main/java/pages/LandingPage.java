@@ -1,6 +1,7 @@
 package pages;
 
 
+import java.time.Duration;
 import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
@@ -8,6 +9,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 import com.aventstack.extentreports.ExtentTest;
@@ -50,6 +53,10 @@ public class LandingPage extends PagesBaseClass{
 	public void closeLoginPopUp() {
 		try {
 		Actions action = new Actions(driver);
+		
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		wait.until(ExpectedConditions.visibilityOfAllElements(knownElement));
+		
 		action.moveToElement(knownElement).click(knownElement).build().perform();
 		logger.log(Status.PASS, "Login Pop Closed sucessfully. ");
 		}catch (Exception e) {
@@ -85,8 +92,8 @@ public class LandingPage extends PagesBaseClass{
 	
 	/**************** Navigate to Hotels Page ***********/
 	public HotelsPage getHotelsPage() {
-		HotelsPage_linkTextElement.click();
-		logger.log(Status.INFO, "Clicked on Hotels icon.");
+		//HotelsPage_linkTextElement.click();
+		//logger.log(Status.INFO, "Clicked on Hotels icon.");
 		HotelsPage hotelsPage = new HotelsPage(driver,logger);
 		PageFactory.initElements(driver, hotelsPage);
 		return hotelsPage;
