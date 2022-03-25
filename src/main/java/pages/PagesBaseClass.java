@@ -1,7 +1,9 @@
 package pages;
 
 
+import java.time.Duration;
 import java.util.Properties;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
@@ -27,7 +29,8 @@ public class PagesBaseClass {
 	public LandingPage OpenApplication() {
 		ReadPropertiesFile objProp = new ReadPropertiesFile();
 		Properties prop = objProp.readPropertiesFile();
-				
+		
+		 
 		driver.get(prop.getProperty("baseURL"));
 		logger.log(Status.INFO, "Landed on MakeMyTrip Landing page.");
 		LandingPage landingPage = new LandingPage(driver, logger);

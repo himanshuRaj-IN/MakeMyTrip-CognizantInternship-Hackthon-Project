@@ -17,6 +17,7 @@ public class DriverSetup {
 		Properties prop = objProp.readPropertiesFile();		
 		try {
 			if (prop.getProperty("browserName").equalsIgnoreCase("chrome")) {
+				//System.setProperty("webdriver.chrome.silentOutput","true");
 				System.setProperty("webdriver.chrome.driver", "drivers\\chromedriver.exe");
 				driver = new ChromeDriver();
 			} else if (prop.getProperty("browserName").equalsIgnoreCase("firefox")) {
