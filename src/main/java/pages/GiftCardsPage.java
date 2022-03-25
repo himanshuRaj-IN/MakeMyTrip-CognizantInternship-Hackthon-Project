@@ -157,11 +157,12 @@ public class GiftCardsPage extends PagesBaseClass {
 			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 			wait.until(ExpectedConditions.visibilityOf(errorMessageDisplay_Element));
 			String str = errorMessageDisplay_Element.getText();
-			if(str.equals("Please enter a valid Email id")) {
-				logger.log(Status.INFO, "Encountered a problem----->Test Case Failed.");
+			System.out.println(str);
+			if(str.equals("Please enter a valid Email id.")) {
+				logger.log(Status.PASS, "Error message : "+str);
 				return true;
 			}else {
-				logger.log(Status.PASS, "Displayed The Error Message");
+				logger.log(Status.PASS, "Error message : "+str);
 				return false;
 			}
 		} catch (Exception e) {

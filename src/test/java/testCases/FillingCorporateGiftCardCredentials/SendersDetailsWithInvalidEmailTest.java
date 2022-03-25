@@ -27,8 +27,7 @@ public class SendersDetailsWithInvalidEmailTest  extends BaseTestClass {
 		
 		giftCardsPage.clickonBuyNowButton();
 		boolean flag = giftCardsPage.displayingErrorMessage();
-		Assert.assertEquals(flag, false);
-		Thread.sleep(10000);
+		Assert.assertEquals(flag, true);
 		driver.close();
 		driver.switchTo().window(currWin);
 	}
