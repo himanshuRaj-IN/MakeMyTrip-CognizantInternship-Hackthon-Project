@@ -8,7 +8,13 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.remote.ScreenshotException;
 import org.testng.ITestResult;
+
+import com.aventstack.extentreports.Status;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 
 public class CaptureScreenshot {
@@ -21,6 +27,8 @@ public class CaptureScreenshot {
 		
 		File target = new File(dest);
 		FileUtils.copyFile(src,target);
+		
+		
 		return dest;
 	}
 	public static String generateFileName(ITestResult result) {

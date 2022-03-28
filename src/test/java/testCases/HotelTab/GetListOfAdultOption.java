@@ -1,7 +1,8 @@
 package testCases.HotelTab;
 
 import org.testng.annotations.Test;
-
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import BaseClasses.BaseTestClass;
 import BaseClasses.PagesBaseClass;
 import pages.CabsPage;
@@ -9,6 +10,7 @@ import pages.LandingPage;
 
 
 public class GetListOfAdultOption extends BaseTestClass {
+	private static final Logger Logger = LogManager.getLogger(GetListOfAdultOption .class);
 
 	LandingPage landingPage;
 	CabsPage cabsPage;
@@ -16,7 +18,8 @@ public class GetListOfAdultOption extends BaseTestClass {
 	
 	@Test
 	public void listOfAdultOption() {
-		logger = report.createTest("Print list of available adult option");
+		logger = report.createTest("List of Adult option");
+		Logger.info("List of numbers of adults in Room1");
 		PagesBaseClass objPagesBaseClass = new PagesBaseClass(driver, logger);
 		landingPage = objPagesBaseClass.OpenApplication();
 		landingPage.closeLoginPopUp();
@@ -24,5 +27,6 @@ public class GetListOfAdultOption extends BaseTestClass {
 		hotelsPage.ClickOnHotelMenu();	
 		hotelsPage.ClickOnRoomAndGuest();	
 		hotelsPage.getListOfNumbersForAdultPerson();
+		Logger.info("Printing List of numbers of adults in Room1---> Successful");
 	}
 }

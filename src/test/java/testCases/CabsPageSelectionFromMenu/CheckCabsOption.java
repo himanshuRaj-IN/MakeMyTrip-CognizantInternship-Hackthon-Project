@@ -20,6 +20,7 @@ public class CheckCabsOption extends BaseTestClass{
 	public void checkCabsOption() {
 		Logger.info("Check Cabs Option Test Case initiated.");
 		logger = report.createTest("Check Cabs Option");
+		
 		PagesBaseClass objPagesBaseClass = new PagesBaseClass(driver, logger);
 		landingPage = objPagesBaseClass.OpenApplication();
 		landingPage.closeLoginPopUp();

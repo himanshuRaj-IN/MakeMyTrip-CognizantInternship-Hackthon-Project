@@ -1,16 +1,20 @@
 package testCases.SearchButtonFunctionalityCabsPage;
 
 import org.testng.annotations.Test;
-
 import BaseClasses.BaseTestClass;
 import BaseClasses.PagesBaseClass;
+import testCases.HotelTab.CheckHotelOption;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class SearchcabsfromdelhitomanaliTest extends BaseTestClass{
-	
+	private static final Logger Logger = LogManager.getLogger(SearchcabsfromdelhitomanaliTest.class);
 	
 	@Test
 	public void searchcabsfromdelhitomanali() {
 		logger = report.createTest("Search Cabs from Delhi to Manali ");
+		Logger.info("Searching Cabs from Delhi to Manali ");
 		PagesBaseClass objPagesBaseClass = new PagesBaseClass(driver, logger);
 		landingPage = objPagesBaseClass.OpenApplication();
 		landingPage.closeLoginPopUp();
@@ -31,6 +35,7 @@ public class SearchcabsfromdelhitomanaliTest extends BaseTestClass{
 		cabsPage.verifyPickupTime("01:40 AM");		
 		searchPageCabs = cabsPage.clickOnSearchButton();
 		searchPageCabs.verifySearchListPresent();
+		Logger.info("Searching Cabs from Delhi to Manali---> Successful");
 		
 		try {
 			Thread.sleep(5000);

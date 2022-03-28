@@ -4,16 +4,19 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.Status;
-
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import BaseClasses.BaseTestClass;
 import BaseClasses.PagesBaseClass;
 
 public class SendersDetailsWithInvalidMobileNumTest extends BaseTestClass {
+	private static final Logger Logger = LogManager.getLogger(SendersDetailsWithInvalidMobileNumTest.class);
 
 	
 	@Test
 	public void sendersDetailsWithInValidMobileNumber() throws InterruptedException {
 		logger = report.createTest("Senders Details With InValid Mobile Number");
+		Logger.info("Senders Details With InValid Mobile Number");
 		PagesBaseClass objPagesBaseClass = new PagesBaseClass(driver, logger);
 		landingPage = objPagesBaseClass.OpenApplication();
 		landingPage.closeLoginPopUp();
@@ -31,6 +34,7 @@ public class SendersDetailsWithInvalidMobileNumTest extends BaseTestClass {
 		String actualString = giftCardsPage.getMobileNumberErrorMessage();
 		Assert.assertEquals(actualString, "Please enter a valid mobile number");
 		logger.log(Status.PASS, "Error Message : " + actualString);
+		Logger.info("Error Message : " + actualString);
 		
 		driver.close();
 		driver.switchTo().window(currWin);

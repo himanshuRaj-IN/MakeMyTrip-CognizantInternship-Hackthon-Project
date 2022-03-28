@@ -4,14 +4,17 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.Status;
-
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import BaseClasses.BaseTestClass;
 import BaseClasses.PagesBaseClass;
 
 public class SendersDetailsWithoutNameTest extends BaseTestClass {
+	private static final Logger Logger = LogManager.getLogger(SendersDetailsWithoutNameTest.class);
 	@Test
 	public void sendersDetailsWithoutName() throws InterruptedException {
 		logger = report.createTest("Senders Details Without Name");
+		Logger.info("Checking Warning Message Without Name");
 		PagesBaseClass objPagesBaseClass = new PagesBaseClass(driver, logger);
 		landingPage = objPagesBaseClass.OpenApplication();
 		landingPage.closeLoginPopUp();
@@ -29,6 +32,7 @@ public class SendersDetailsWithoutNameTest extends BaseTestClass {
 		String actualString = giftCardsPage. CredentialsWithoutNameErrorMessage();
 		Assert.assertEquals(actualString, "This is a mandatory field");
 		logger.log(Status.PASS, "Error Message : " + actualString);
+		Logger.info("Error Message : " + actualString);
 		driver.close();
 		driver.switchTo().window(currWin);
 	}

@@ -1,5 +1,6 @@
 package testCases.CabsPageSelectionFromMenu;
-
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import org.testng.annotations.Test;
 import BaseClasses.BaseTestClass;
@@ -8,14 +9,17 @@ import pages.CabsPage;
 import pages.LandingPage;
 
 
-public class NavigateCabsPageTest extends BaseTestClass {
+public class NavigateCabsPageTest extends BaseTestClass{
+	private static final Logger Logger = LogManager.getLogger(NavigateCabsPageTest.class);
 
 	LandingPage landingPage;
 	CabsPage cabsPage;
 	
 	@Test
 	public void navigateCabsPageTest() {
+		Logger.info("Navigate Cabs Page Test Case initiated.");
 		logger = report.createTest("Navigate Cab Page");
+		
 		PagesBaseClass objPagesBaseClass = new PagesBaseClass(driver, logger);
 		landingPage = objPagesBaseClass.OpenApplication();
 		landingPage.closeLoginPopUp();
@@ -24,8 +28,4 @@ public class NavigateCabsPageTest extends BaseTestClass {
 		cabsPage.verifySubHeading();
 		cabsPage.verifyCabsPageURL();
 	}
-	
-
-	
-
 }
