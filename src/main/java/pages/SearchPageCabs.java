@@ -68,9 +68,9 @@ public class SearchPageCabs extends PagesBaseClass {
 	public void filterByPriceLH() {
 		try {
 			sortedBy_Element.click();
-			logger.log(Status.PASS, "Clicked on the Sorted by dorpdown arrow.");
+			logger.log(Status.PASS, "Clicked on the Sorted by dropdown arrow.");
 			priceFilter_Element.click();
-			logger.log(Status.PASS, "Price Lower to Hightst filter is selelcted.");
+			logger.log(Status.PASS, "Price Lowest to Highest filter is selelcted.");
 		} catch (Exception e) {
 			reportFail(e.getMessage());
 		}

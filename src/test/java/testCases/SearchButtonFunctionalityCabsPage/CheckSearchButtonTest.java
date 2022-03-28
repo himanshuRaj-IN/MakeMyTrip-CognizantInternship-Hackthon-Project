@@ -8,7 +8,7 @@ import BaseClasses.PagesBaseClass;
 public class CheckSearchButtonTest extends BaseTestClass{
 	@Test
 	public void checkSearchButton() {
-		logger = report.createTest("Select Pickup-Time");
+		logger = report.createTest("Check Search button available and enabled.");
 		PagesBaseClass objPagesBaseClass = new PagesBaseClass(driver, logger);
 		landingPage = objPagesBaseClass.OpenApplication();
 		landingPage.closeLoginPopUp();

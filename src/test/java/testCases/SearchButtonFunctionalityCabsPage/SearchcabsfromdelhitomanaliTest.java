@@ -10,7 +10,7 @@ public class SearchcabsfromdelhitomanaliTest extends BaseTestClass{
 	
 	@Test
 	public void searchcabsfromdelhitomanali() {
-		logger = report.createTest("Search Cabs from himachal to manali ");
+		logger = report.createTest("Search Cabs from Delhi to Manali ");
 		PagesBaseClass objPagesBaseClass = new PagesBaseClass(driver, logger);
 		landingPage = objPagesBaseClass.OpenApplication();
 		landingPage.closeLoginPopUp();

@@ -153,7 +153,7 @@ public class CabsPage extends PagesBaseClass {
 				}
 			}
 			Assert.assertTrue(falg);
-			logger.log(Status.PASS, "City Selected form suggestion.");
+			logger.log(Status.PASS, "City Selected from suggestions.");
 		} catch (Exception e) {
 			reportFail(e.getMessage());
 		}
