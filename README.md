@@ -26,7 +26,7 @@ Key Automation Scope
 
 ## Modification in Requirement 
  
-- Due to unavilability of the element Group Gifting in Gift Cards page So requirement changed to Corporate Gift card ( Find corporate gift card, fill card details and gift and give invalid email; capture and display the error message )
+- Due to unavailability of the element Group Gifting in Gift Cards page So requirement changed to Corporate Gift card ( Find corporate gift card, fill card details and gift and give invalid email; capture and display the error message )
 
 
 ## Authors
