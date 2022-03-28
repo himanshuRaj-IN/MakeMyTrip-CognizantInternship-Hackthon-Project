@@ -1,5 +1,6 @@
+
 # CognizantHackathon
-# MakeMyTrip
+# MakeMyTrip ( https://www.makemytrip.com/ )
 ## Book one way outstation cab and display the lowest charges
 Problem Statement : Book one way outstation cab and display the lowest charges
 
@@ -22,3 +23,29 @@ Key Automation Scope
 3. Extract drop down items & store in collections
 4. Navigation from Menus
 5. Navigating back to home page
+
+## Modification in Requirement 
+ 
+- Due to unavilability of the element Group Gifting in Gift Cards page So requirement changed to Corporate Gift card ( Find corporate gift card, fill card details and gift and give invalid email; capture and display the error message )
+
+
+## Authors
+
+- [Himanshu Raj](https://github.com/himanshuraj-glitches)
+- [Pushkar Kumar Singh](https://github.com/singhpushkar001)
+- [Pushpa Mani Singh](https://github.com/loveurlife2812)
+- [Nem Singh](https://github.com/nemsingh20)
+
+
+## Tech Stack
+
+- **Java** 
+- **Selenium** 
+- **TestNG** 
+- **Apache PoI** 
+- **Extent Report**
+- **Log4J** 
+
+
+
+
