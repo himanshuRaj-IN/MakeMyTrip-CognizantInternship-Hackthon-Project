@@ -3,8 +3,11 @@ package BaseClasses;
 
 
 import java.util.Properties;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.apache.xmlbeans.impl.xb.xsdschema.Public;
+import org.checkerframework.common.value.qual.StaticallyExecutable;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
@@ -41,7 +44,7 @@ public class PagesBaseClass {
 	
 	
 	/****************** Reporting Functions ***********************/
-	public void reportFail(String reportString) {
+	public void reportFail(String reportString){
 		logger.log(Status.FAIL, reportString);
 		Assert.fail(reportString);
 	}
@@ -49,8 +52,5 @@ public class PagesBaseClass {
 	public void reportPass(String reportString) {
 		logger.log(Status.PASS, reportString);
 	}
-
-	
-
 
 }

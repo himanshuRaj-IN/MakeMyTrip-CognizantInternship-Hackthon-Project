@@ -20,6 +20,8 @@ import com.aventstack.extentreports.Status;
 
 import BaseClasses.PagesBaseClass;
 import utilities.ReadPropertiesFile;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class LandingPage extends PagesBaseClass{
 	private static final Logger Logger = LogManager.getLogger(LandingPage.class);
@@ -73,6 +75,7 @@ public class LandingPage extends PagesBaseClass{
 		try {
 		cabsPage_linkTextElement.click();
 		logger.log(Status.PASS, "Clicked on Cabs icon.");
+		Logger.info("Clicked on Cabs icon.");
 		}catch (Exception e) {
 			reportFail(e.getMessage());
 		}		
@@ -98,10 +101,11 @@ public class LandingPage extends PagesBaseClass{
 	
 	/**************** Navigate to Hotels Page ***********/
 	public HotelsPage getHotelsPage() {
-		//HotelsPage_linkTextElement.click();
-		//logger.log(Status.INFO, "Clicked on Hotels icon.");
+		
 		HotelsPage hotelsPage = new HotelsPage(driver,logger);
 		PageFactory.initElements(driver, hotelsPage);
+		logger.log(Status.INFO, "Clicked on Hotels icon.");
+		Logger.info("Clicked on Hotels icon.");
 		return hotelsPage;
 	}
 
@@ -109,6 +113,7 @@ public class LandingPage extends PagesBaseClass{
 	public GiftCardsPage getGiftCardsPage() {
 		GiftCardsPage_Element.click();
 		logger.log(Status.INFO, "Clicked on Gifts page icon.");
+		Logger.info("Clicked on Gifts page icon.");
 		GiftCardsPage	giftCardsPage  = new GiftCardsPage(driver,logger);
 		PageFactory.initElements(driver, giftCardsPage);
 		return giftCardsPage;

@@ -6,7 +6,8 @@ import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
-
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
@@ -30,6 +31,7 @@ public class BaseTestClass {
 	public static HotelsPage hotelsPage;
 	public static GiftCardsPage giftCardsPage;
 	public static SearchPageCabs searchPageCabs;
+	private static final Logger Logger = LogManager.getLogger(BaseTestClass.class);
 	
 	@BeforeSuite(alwaysRun = true)
 	public void setup() {

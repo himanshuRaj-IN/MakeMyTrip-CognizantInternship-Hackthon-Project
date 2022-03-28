@@ -22,8 +22,12 @@ import com.aventstack.extentreports.Status;
 
 import BaseClasses.PagesBaseClass;
 import utilities.ReadPropertiesFile;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 
 public class CabsPage extends PagesBaseClass {
+	private static final Logger Logger = LogManager.getLogger(CabsPage.class);
 	Properties prop;
 
 	public CabsPage(WebDriver driver, ExtentTest logger) {
@@ -94,7 +98,7 @@ public class CabsPage extends PagesBaseClass {
 			String ActualURL = driver.getCurrentUrl();
 			Assert.assertEquals(ActualURL, ExpectedURL);
 			logger.log(Status.PASS, "PASS : URL Verified [ Got -> " + ActualURL + " ]");
-
+			Logger.info("PASS : URL Verified [ Got -> " + ActualURL + " ]");
 		} catch (Exception e) {
 			reportFail("Exception Occured -> " + e.getMessage());
 		}
@@ -108,6 +112,7 @@ public class CabsPage extends PagesBaseClass {
 			String ActualTitle = subHeading_Element.getText();
 			Assert.assertEquals(ActualTitle, ExpectedTitle);
 			logger.log(Status.PASS, "PASS : Sub heading Verified [ Got -> " + ActualTitle + " ]");
+			Logger.info( "PASS : Sub heading Verified [ Got -> " + ActualTitle + " ]");
 		} catch (Exception e) {
 			reportFail("Exception Occured -> " + e.getMessage());
 		}
@@ -119,11 +124,13 @@ public class CabsPage extends PagesBaseClass {
 		try {
 			FROMInput_Element.click();
 			logger.log(Status.INFO, "Clicked on FROM City Lebel");
+			Logger.info("Clicked on FROM City Lebel");
 			for (int i = 0; i < city.length(); i++) {
 				Thread.sleep(200);
 				FROMPlaceholder_Element.sendKeys(Character.toString(city.charAt(i)));
 			}
 			logger.log(Status.INFO, "Entered " + city + " in appeared placeholder.");
+			Logger.info("Entered " + city + " in appeared placeholder.");
 		} catch (Exception e) {
 			reportFail(e.getMessage());
 		}
@@ -135,6 +142,7 @@ public class CabsPage extends PagesBaseClass {
 			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 			wait.until(ExpectedConditions.visibilityOfAllElements(suggestionList_Elements));
 			logger.log(Status.INFO, "Suggestions appeared for input.");
+			Logger.info("Suggestions appeared for input.");
 		} catch (Exception e) {
 			reportFail(e.getMessage());
 		}
@@ -154,6 +162,7 @@ public class CabsPage extends PagesBaseClass {
 			}
 			Assert.assertTrue(falg);
 			logger.log(Status.PASS, "City Selected from suggestions.");
+			Logger.info("City Selected from suggestions.");
 		} catch (Exception e) {
 			reportFail(e.getMessage());
 		}
@@ -165,6 +174,7 @@ public class CabsPage extends PagesBaseClass {
 		try {
 			Assert.assertEquals(FROMInput_Element.getAttribute("value"), expectedCity);
 			logger.log(Status.PASS, "Selected city is verified");
+			Logger.info("Selected city is verified");
 		} catch (Exception e) {
 			reportFail(e.getMessage());
 		}
@@ -176,6 +186,7 @@ public class CabsPage extends PagesBaseClass {
 		try {
 			TOInput_Element.click();
 			logger.log(Status.INFO, "Clicked on To City Lebel");
+			Logger.info("Clicked on To City Lebel");
 		} catch (Exception e) {
 			reportFail(e.getMessage());
 		}
@@ -189,6 +200,7 @@ public class CabsPage extends PagesBaseClass {
 				TOPlaceholder_Element.sendKeys(Character.toString(city.charAt(i)));
 			}
 			logger.log(Status.INFO, "Entered " + city + " in appeared placeholder.");
+			Logger.info("Entered " + city + " in appeared placeholder.");
 		} catch (Exception e) {
 			reportFail(e.getMessage());
 		}
@@ -199,6 +211,7 @@ public class CabsPage extends PagesBaseClass {
 		try {
 			Assert.assertEquals(TOInput_Element.getAttribute("value"), expectedCity);
 			logger.log(Status.PASS, "Selected city is verified");
+			Logger.info("Selected city is verified");
 		} catch (Exception e) {
 			reportFail(e.getMessage());
 		}
@@ -210,6 +223,7 @@ public class CabsPage extends PagesBaseClass {
 		try {
 			pickuupInput_Elementl.click();
 			logger.log(Status.PASS, "Clicked on PickUp.");
+			Logger.info("Clicked on PickUp.");
 		} catch (Exception e) {
 			reportFail(e.getMessage());
 		}
@@ -226,6 +240,7 @@ public class CabsPage extends PagesBaseClass {
 				}
 			}
 			logger.log(Status.PASS, "Selected PickUP Time : " + HHcolonMM_AM);
+			Logger.info("Selected PickUP Time : " +HHcolonMM_AM);
 		} catch (Exception e) {
 			reportFail(e.getMessage());
 		}
@@ -237,6 +252,7 @@ public class CabsPage extends PagesBaseClass {
 			String temp = verifypicupDate_element.getText();
 			Assert.assertEquals(temp, HHcolonMM_AM);
 			logger.log(Status.PASS, "Pickup time verified got : " + HHcolonMM_AM);
+			Logger.info("Pickup time verified got : " +HHcolonMM_AM);
 		} catch (Exception e) {
 			reportFail(e.getMessage());
 		}
@@ -247,6 +263,7 @@ public class CabsPage extends PagesBaseClass {
 		try {
 			departureDateLabel_Element.click();
 			logger.log(Status.PASS, "Clicked on Departure Date.");
+			Logger.info("Clicked on Departure Date.");
 		} catch (Exception e) {
 			reportFail(e.getMessage());
 		}
@@ -285,14 +302,17 @@ public class CabsPage extends PagesBaseClass {
 					}
 					else if(cal1.get(Calendar.MONTH) < cal2.get(Calendar.MONTH)) {
 						logger.log(Status.INFO, "Changing Calender month.");
+						Logger.info("Changing Calender month.");
 						nextMonthButton_Element.click();
 					}else if(cal1.get(Calendar.MONTH) > cal2.get(Calendar.MONTH)) {
 						logger.log(Status.INFO, "Changing Calender month.");
+						Logger.info("Changing Calender month.");
 						previousMonthButton_Element.click();
 					}
 
 				}
 				logger.log(Status.PASS, "Departure Date id Slelected to " + date);
+				Logger.info("Departure Date id Slelected to " + date);
 			} catch (Exception e) {
 				reportFail(e.getMessage());
 			}
@@ -314,6 +334,7 @@ public class CabsPage extends PagesBaseClass {
 			String ActualDate = verifyDepature_Element.getText();
 			Assert.assertEquals(ActualDate, ExpectedDate1);
 			logger.log(Status.PASS, "Departure Date verified  Got : " + ActualDate);
+			Logger.info("Departure Date verified  Got : " + ActualDate);
 		} catch (Exception e) {
 			reportFail(e.getMessage());
 		}
@@ -324,8 +345,10 @@ public class CabsPage extends PagesBaseClass {
 		try {
 			searchButton_Element.isDisplayed();
 			logger.log(Status.PASS, "Search Button is displayed.");
+			Logger.info("Search Button is displayed.");
 			searchButton_Element.isEnabled();
 			logger.log(Status.PASS, "Search Button is Enabled");
+			Logger.info("Search Button is Enabled.");
 
 		} catch (Exception e) {
 			reportFail(e.getMessage());
@@ -337,6 +360,7 @@ public class CabsPage extends PagesBaseClass {
 		try {
 			searchButton_Element.click();
 			logger.log(Status.PASS, "Clicked on Search Button.");
+			Logger.info("Clicked on Search Button.");
 
 			// Returning SearchPageObject
 			SearchPageCabs searchPageCabs = new SearchPageCabs(driver, logger);
