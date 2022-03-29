@@ -4,6 +4,8 @@ package pages;
 import java.time.Duration;
 import java.util.Properties;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -18,8 +20,11 @@ import com.aventstack.extentreports.Status;
 
 import BaseClasses.PagesBaseClass;
 import utilities.ReadPropertiesFile;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class LandingPage extends PagesBaseClass{
+	private static final Logger Logger = LogManager.getLogger(LandingPage.class);
 	Properties prop;
 	
 	public LandingPage(WebDriver driver, ExtentTest logger) {
@@ -59,6 +64,7 @@ public class LandingPage extends PagesBaseClass{
 		
 		action.moveToElement(knownElement).click(knownElement).build().perform();
 		logger.log(Status.PASS, "Login Pop Closed sucessfully. ");
+		Logger.info("Login Pop Closed sucessfully.");
 		}catch (Exception e) {
 			reportFail(e.getMessage());
 		}
@@ -69,6 +75,7 @@ public class LandingPage extends PagesBaseClass{
 		try {
 		cabsPage_linkTextElement.click();
 		logger.log(Status.PASS, "Clicked on Cabs icon.");
+		Logger.info("Clicked on Cabs icon.");
 		}catch (Exception e) {
 			reportFail(e.getMessage());
 		}		
@@ -83,8 +90,10 @@ public class LandingPage extends PagesBaseClass{
 		try {
 			Assert.assertTrue(cabsPage_linkTextElement.isDisplayed());
 			logger.log(Status.PASS, "PASS : Element is present on Landing page.");
+			Logger.info("PASS : Element is present on Landing page.");
 			Assert.assertTrue(cabsPage_linkTextElement.isEnabled());
 			logger.log(Status.PASS, "PASS : Element is Enabled on Landing page.");
+			Logger.info("PASS : Element is Enabled on Landing page.");
 		} catch (Exception e) {
 			reportFail(e.getMessage());
 		}
@@ -92,10 +101,11 @@ public class LandingPage extends PagesBaseClass{
 	
 	/**************** Navigate to Hotels Page ***********/
 	public HotelsPage getHotelsPage() {
-		//HotelsPage_linkTextElement.click();
-		//logger.log(Status.INFO, "Clicked on Hotels icon.");
+		
 		HotelsPage hotelsPage = new HotelsPage(driver,logger);
 		PageFactory.initElements(driver, hotelsPage);
+		logger.log(Status.INFO, "Clicked on Hotels icon.");
+		Logger.info("Clicked on Hotels icon.");
 		return hotelsPage;
 	}
 
@@ -103,6 +113,7 @@ public class LandingPage extends PagesBaseClass{
 	public GiftCardsPage getGiftCardsPage() {
 		GiftCardsPage_Element.click();
 		logger.log(Status.INFO, "Clicked on Gifts page icon.");
+		Logger.info("Clicked on Gifts page icon.");
 		GiftCardsPage	giftCardsPage  = new GiftCardsPage(driver,logger);
 		PageFactory.initElements(driver, giftCardsPage);
 		return giftCardsPage;

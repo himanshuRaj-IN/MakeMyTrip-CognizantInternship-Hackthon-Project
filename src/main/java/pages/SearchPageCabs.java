@@ -18,8 +18,11 @@ import com.aventstack.extentreports.Status;
 import BaseClasses.PagesBaseClass;
 import net.bytebuddy.utility.privilege.GetMethodAction;
 import utilities.ReadPropertiesFile;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class SearchPageCabs extends PagesBaseClass {
+	private static final Logger Logger = LogManager.getLogger(SearchPageCabs.class);
 	Properties prop;
 
 	public SearchPageCabs(WebDriver driver, ExtentTest logger) {
@@ -49,6 +52,7 @@ public class SearchPageCabs extends PagesBaseClass {
 		try {
 			searchList_Element.isDisplayed();
 			logger.log(Status.PASS, "Search List  appeared ");
+			Logger.info("Search List  appeared ");
 		} catch (Exception e) {
 			reportFail(e.getMessage());
 		}
@@ -59,6 +63,7 @@ public class SearchPageCabs extends PagesBaseClass {
 		try {
 			suv_Element.click();
 			logger.log(Status.PASS, "Selected SUV in cab type.");
+			Logger.info("Selected SUV in cab type.");
 		} catch (Exception e) {
 			reportFail(e.getMessage());
 		}
@@ -68,9 +73,11 @@ public class SearchPageCabs extends PagesBaseClass {
 	public void filterByPriceLH() {
 		try {
 			sortedBy_Element.click();
-			logger.log(Status.PASS, "Clicked on the Sorted by dorpdown arrow.");
+			logger.log(Status.PASS, "Clicked on the Sorted by dropdown arrow.");
+			Logger.info("Clicked on the Sorted by dropdown arrow.");
 			priceFilter_Element.click();
-			logger.log(Status.PASS, "Price Lower to Hightst filter is selelcted.");
+			logger.log(Status.PASS, "Price Lowest to Highest filter is selected.");
+			Logger.info("Price Lowest to Highest filter is selected.");
 		} catch (Exception e) {
 			reportFail(e.getMessage());
 		}
@@ -99,10 +106,13 @@ public class SearchPageCabs extends PagesBaseClass {
 			
 			for (Integer price : prices) {
 				logger.log(Status.INFO, "Available Cabs at Price : "+Integer.toString(price));
+				Logger.info("Available Cabs at Price : "+Integer.toString(price));
 			}
 			Assert.assertEquals(true, flag);
 			logger.log(Status.PASS, "Price verified");
+			Logger.info("Price verified");
 			logger.log(Status.PASS,"Lowest Price Available is : "+prices.get(0));
+			Logger.info("Lowest Price Available is : "+prices.get(0));
 			System.out.println(prices);
 			
 		} catch (Exception e) {

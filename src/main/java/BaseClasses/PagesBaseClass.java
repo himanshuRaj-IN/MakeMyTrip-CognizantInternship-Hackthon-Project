@@ -1,22 +1,23 @@
 package BaseClasses;
 
 
-import java.time.Duration;
-import java.util.Properties;
-import java.util.concurrent.TimeUnit;
 
+import java.util.Properties;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.apache.xmlbeans.impl.xb.xsdschema.Public;
+import org.checkerframework.common.value.qual.StaticallyExecutable;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
-
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
-
 import pages.LandingPage;
 import utilities.ReadPropertiesFile;
 
 public class PagesBaseClass {
-	
+	private static final Logger Logger = LogManager.getLogger(PagesBaseClass.class);
 	public WebDriver driver;
 	public ExtentTest logger;
 	public Properties prop ;
@@ -31,10 +32,11 @@ public class PagesBaseClass {
 	public LandingPage OpenApplication() {
 		ReadPropertiesFile objProp = new ReadPropertiesFile();
 		Properties prop = objProp.readPropertiesFile();
-		
-		 
+			 
 		driver.get(prop.getProperty("baseURL"));
-		logger.log(Status.INFO, "Landed on MakeMyTrip Landing page.");
+		String msg = "Landed on MakeMyTrip Landing page.";
+		logger.log(Status.INFO, msg);
+		Logger.info(msg);
 		LandingPage landingPage = new LandingPage(driver, logger);
 		PageFactory.initElements(driver,landingPage);
 		return landingPage;
@@ -42,7 +44,7 @@ public class PagesBaseClass {
 	
 	
 	/****************** Reporting Functions ***********************/
-	public void reportFail(String reportString) {
+	public void reportFail(String reportString){
 		logger.log(Status.FAIL, reportString);
 		Assert.fail(reportString);
 	}
@@ -50,8 +52,5 @@ public class PagesBaseClass {
 	public void reportPass(String reportString) {
 		logger.log(Status.PASS, reportString);
 	}
-
-	
-
 
 }

@@ -1,15 +1,19 @@
 package testCases.SearchResultFilters;
 
 import org.testng.annotations.Test;
-
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import BaseClasses.BaseTestClass;
 import BaseClasses.PagesBaseClass;
+import testCases.HotelTab.CheckHotelOption;
 
 public class FilterCabsByCabType extends BaseTestClass{
+	private static final Logger Logger = LogManager.getLogger(FilterCabsByCabType .class);
 	
 	@Test
 	public void filterCabsByCabType() {
 		logger = report.createTest("Filter Cabs By Cab Type");
+		Logger.info("Filtering Cabs By Cab Type");
 		PagesBaseClass objPagesBaseClass = new PagesBaseClass(driver, logger);
 		landingPage = objPagesBaseClass.OpenApplication();
 		landingPage.closeLoginPopUp();
@@ -31,6 +35,7 @@ public class FilterCabsByCabType extends BaseTestClass{
 		searchPageCabs = cabsPage.clickOnSearchButton();
 		searchPageCabs.verifySearchListPresent();
 		searchPageCabs.filterBySuv();
+		Logger.info("Filtering Cabs By Cabs Type---> Successful");
 		
 	}
 

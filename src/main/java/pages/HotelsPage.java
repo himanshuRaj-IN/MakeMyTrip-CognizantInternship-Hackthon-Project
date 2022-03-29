@@ -17,8 +17,12 @@ import com.aventstack.extentreports.Status;
 
 import BaseClasses.PagesBaseClass;
 import utilities.ReadPropertiesFile;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 
 public class HotelsPage extends PagesBaseClass{
+	private static final Logger Logger = LogManager.getLogger(HotelsPage.class);
 	Properties prop;
 	public HotelsPage(WebDriver driver, ExtentTest logger) {
 		super(driver, logger);
@@ -48,8 +52,10 @@ public class HotelsPage extends PagesBaseClass{
 			
 			Assert.assertTrue(hotelsMenu.isDisplayed());
 			logger.log(Status.PASS, "PASS : Hotel is present on Landing page.");
+			Logger.info("PASS : Hotel is present on Landing page.");
 			Assert.assertTrue(hotelsMenu.isEnabled());
 			logger.log(Status.PASS, "PASS : hotel is Enabled on Landing page.");
+			Logger.info("PASS : Hotel is Enabled on Landing page.");
 			
 		}catch (Exception e) {
 			reportFail("Exception Occured -> "+e.getMessage());
@@ -64,6 +70,7 @@ public class HotelsPage extends PagesBaseClass{
 		try {
 			hotelsMenu.click();
 			logger.log(Status.PASS,"Click on hotets Menu");
+			Logger.info("Click on hotets Menu");
 			
 		}catch (Exception e) {
 			reportFail("Exception Occured -> "+e.getMessage());
@@ -80,8 +87,12 @@ public class HotelsPage extends PagesBaseClass{
 			String ActualURL=driver.getCurrentUrl();
 			if (ActualURL.equals(ExpectedURL)) {
 				reportPass("PASS : URL Verified [ Got ->" + ActualURL+" ]");
+				logger.log(Status.PASS,"PASS : URL Verified [ Got ->" + ActualURL+" ]");
+				Logger.info("PASS : URL Verified [ Got ->" + ActualURL+" ]");
 			}else {
 				reportFail("FAIL : URL Not Verified [ Got ->" + ExpectedURL+" ]");
+				logger.log(Status.PASS,"FAIL : URL Not Verified [ Got ->" + ExpectedURL+" ]");
+				Logger.info("FAIL : URL Not Verified [ Got ->" + ExpectedURL+" ]");
 			}
 		} catch (Exception e) {
 				reportFail("Exception Occured -> "+e.getMessage());
@@ -96,6 +107,7 @@ public class HotelsPage extends PagesBaseClass{
 		try {
 			clickOnRoomAndGuest.click();
 			logger.log(Status.INFO, "Clicking on Room and Guests ");
+			Logger.info("Clicking on Room and Guests ");
 			
 		}catch(Exception e) {
 			reportFail("Exception Occured -> "+e.getMessage());
@@ -111,6 +123,7 @@ public class HotelsPage extends PagesBaseClass{
 			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 			wait.until(ExpectedConditions.visibilityOfAllElements(roomDetailsPopUp));
 			logger.log(Status.PASS, "Room Detail Box is appeared for input value of adult  and children.");
+			Logger.info("Room Detail Box is appeared for input value of adult  and children.");
 		} catch (Exception e) {
 			reportFail(e.getMessage());
 		}	
@@ -126,33 +139,11 @@ public class HotelsPage extends PagesBaseClass{
 			   optionToSelectNumberForAdultPerson.add(list.getText());
 		    }
 			
-		    logger.log(Status.PASS, "List of avilable number of room for adult is print successfuly.");
-		    
+		    logger.log(Status.PASS, "List of available number of room for adult is print successfully.");
+		    Logger.info("List of available number of room for adult is print successfully.");
 		}catch (Exception e) {
 			reportFail(e.getMessage());
 		}	
 		
 	}
-  
-	
-	public void forceFailed() {
-		logger.log(Status.INFO, "Main fail hojaiga");
-	
-
-		Assert.assertEquals(true,true );
-		logger.log(Status.PASS,"1 assert");
-		Assert.assertEquals(true,true);
-		logger.log(Status.PASS, "2nd assert");
-		Assert.assertEquals(true,true );
-		logger.log(Status.PASS,"3 assert");
-		try{ 
-		Assert.assertEquals(true, false);
-		logger.log(Status.PASS, "4 assert");}
-		catch (AssertionError e) {
-			logger.log(Status.FAIL, "4 assert");
-		}
-		
-}
-
-
 }

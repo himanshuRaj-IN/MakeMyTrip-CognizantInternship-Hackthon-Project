@@ -2,7 +2,8 @@ package testCases.FillingCabsDetails;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
-
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 
@@ -11,10 +12,12 @@ import BaseClasses.PagesBaseClass;
 import bsh.ParseException;
 
 public class SelectDepartureDate extends BaseTestClass{
+	private static final Logger Logger = LogManager.getLogger(SelectDepartureDate.class);
 	
 	@Test
 	public void selectDepatureDate() throws java.text.ParseException, ParseException {
 		logger = report.createTest("Select Departure Date ");
+		Logger.info("Departure Date Selection--->Successful");
 		PagesBaseClass objPagesBaseClass = new PagesBaseClass(driver, logger);
 		landingPage = objPagesBaseClass.OpenApplication();
 		landingPage.closeLoginPopUp();

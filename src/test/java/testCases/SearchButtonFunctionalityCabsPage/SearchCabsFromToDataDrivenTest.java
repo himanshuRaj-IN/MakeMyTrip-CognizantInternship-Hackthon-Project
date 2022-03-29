@@ -1,17 +1,20 @@
 package testCases.SearchButtonFunctionalityCabsPage;
 
 import java.util.Hashtable;
-
 import org.testng.annotations.Test;
-
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import BaseClasses.BaseTestClass;
 import BaseClasses.PagesBaseClass;
+import testCases.HotelTab.CheckHotelOption;
 
 public class SearchCabsFromToDataDrivenTest extends BaseTestClass{
+	private static final Logger Logger = LogManager.getLogger(SearchCabsFromToDataDrivenTest.class);
 
 	@Test(dataProvider = "FillingCabDetailsData", dataProviderClass = utilities.TestDataProvider.class)
 	public void searchCabsFromToDataDrivenTest(Hashtable<String, String> table) {
 		logger = report.createTest("Data Driven Search Cabs");
+		Logger.info("Data Driven Search Cabs");
 		PagesBaseClass objPagesBaseClass = new PagesBaseClass(driver, logger);
 		landingPage = objPagesBaseClass.OpenApplication();
 		landingPage.closeLoginPopUp();
@@ -30,6 +33,6 @@ public class SearchCabsFromToDataDrivenTest extends BaseTestClass{
 		cabsPage.verifyPickupTime(table.get("PICK UP TIME"));		
 		searchPageCabs = cabsPage.clickOnSearchButton();
 		searchPageCabs.verifySearchListPresent();
-		
+		Logger.info("Data Driven Search Cabs Test---> Successful");
 }
 }
