@@ -19,15 +19,8 @@ import BaseClasses.PagesBaseClass;
 		landingPage.closeLoginPopUp();
 		cabsPage = landingPage.getCabsPage();
 		cabsPage.clickOnPickUpTime();
-		cabsPage.selectPickuptime("01:40 AM");
-		cabsPage.verifyPickupTime("01:40 AM");
-		
-		try {
-			Thread.sleep(5200);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		cabsPage.selectPickuptime("06:30 AM");
+		cabsPage.verifyPickupTime("06:30 AM");
 	}
 
 }

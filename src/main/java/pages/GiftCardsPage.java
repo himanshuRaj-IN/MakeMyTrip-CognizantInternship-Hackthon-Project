@@ -145,6 +145,19 @@ public class GiftCardsPage extends PagesBaseClass {
 			reportFail(e.getMessage());
 		}
 	}
+	
+	/******** Enter Invalid Email Id in Corporate Gift Card ********/
+	public void enterInvalidEmailId(String emailId) {
+		try {
+
+			sendersEmailiD_Element.sendKeys(emailId);
+
+			logger.log(Status.PASS, "Entered the Invalid Email ID");
+			Logger.info("Entered the invalid Email ID");
+		} catch (Exception e) {
+			reportFail(e.getMessage());
+		}
+	}
 
 	/******* Click on Buy Now Button *******************/
 	public void clickonBuyNowButton() {

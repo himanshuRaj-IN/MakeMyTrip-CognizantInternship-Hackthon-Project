@@ -1,13 +1,8 @@
 package BaseClasses;
 
-
-
 import java.util.Properties;
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.apache.xmlbeans.impl.xb.xsdschema.Public;
-import org.checkerframework.common.value.qual.StaticallyExecutable;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;

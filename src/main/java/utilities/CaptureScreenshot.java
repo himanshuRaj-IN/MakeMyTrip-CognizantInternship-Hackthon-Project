@@ -31,8 +31,13 @@ public class CaptureScreenshot {
 		
 		return dest;
 	}
+	
 	public static String generateFileName(ITestResult result) {
 		String filename = result.getName()+DateUtil.getTimeStamp();
+		return filename;
+	}
+	public static String generateFileName(String name) {
+		String filename = name+DateUtil.getTimeStamp();
 		return filename;
 	}
 

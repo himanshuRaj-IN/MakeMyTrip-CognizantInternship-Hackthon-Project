@@ -1,5 +1,7 @@
 package testCases.FillingCorporateGiftCardCredentials;
 
+import java.io.IOException;
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -7,6 +9,7 @@ import com.aventstack.extentreports.Status;
 
 import BaseClasses.BaseTestClass;
 import BaseClasses.PagesBaseClass;
+import utilities.CaptureScreenshot;
 
 public class SendersDetailsWithoutEmailTest extends BaseTestClass{
 	
@@ -24,12 +27,14 @@ public class SendersDetailsWithoutEmailTest extends BaseTestClass{
 
 		giftCardsPage.enterSendersName("Pushkar Singh");
 		giftCardsPage.enterMobileNo("7002041998");
-		giftCardsPage.enterValidEmailId("");
 
 		giftCardsPage.clickonBuyNowButton();
 		String actualString = giftCardsPage. CredentialsWithoutEmailErrorMessage();
 		Assert.assertEquals(actualString, "This is a mandatory field");
 		logger.log(Status.PASS, "Error Message : " + actualString);
+		
+		captureCurrScreenshot("sendersDetailsWithoutEmail");
+		
 		driver.close();
 		driver.switchTo().window(currWin);
 	}

@@ -63,8 +63,8 @@ public class LandingPage extends PagesBaseClass{
 		wait.until(ExpectedConditions.visibilityOfAllElements(knownElement));
 		
 		action.moveToElement(knownElement).click(knownElement).build().perform();
-		logger.log(Status.PASS, "Login Pop Closed sucessfully. ");
-		Logger.info("Login Pop Closed sucessfully.");
+		logger.log(Status.PASS, "Login Pop Up Closed sucessfully. ");
+		Logger.info("Login Pop Up Closed sucessfully.");
 		}catch (Exception e) {
 			reportFail(e.getMessage());
 		}

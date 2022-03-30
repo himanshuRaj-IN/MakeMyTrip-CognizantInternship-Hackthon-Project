@@ -71,7 +71,18 @@ public class BaseTestClass {
 	}
 	
 	public void invokeBrowser() {
+		Logger.info("invoking Browser ....");
 		DriverSetup driverSetupObjDriverSetup = new DriverSetup();
 		driver = driverSetupObjDriverSetup.driverSetup(driver);
+	}
+	
+	public void captureCurrScreenshot(String name) {
+		Logger.info("Capturing currentscreenshot ....");
+		try {
+			String	screenshot = CaptureScreenshot.captureScreenShot(driver, "SendersDetailsWithoutMobileNumTest");
+			logger.pass("Screenshot : "+ logger.addScreenCaptureFromPath(screenshot));
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 	}
 }
