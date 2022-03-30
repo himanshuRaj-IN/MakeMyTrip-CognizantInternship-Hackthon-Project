@@ -135,7 +135,7 @@ public class HotelsPage extends PagesBaseClass{
 			List<String>optionToSelectNumberForAdultPerson=new ArrayList<String>() ;
 		
 		    for(WebElement list:adultSelectOptionList) {
-			   System.out.println(list.getText());
+		       Logger.info(" Adult List Element --> "+list.getText());
 			   optionToSelectNumberForAdultPerson.add(list.getText());
 		    }
 			

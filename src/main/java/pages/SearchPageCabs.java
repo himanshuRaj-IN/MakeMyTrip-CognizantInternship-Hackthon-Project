@@ -88,9 +88,7 @@ public class SearchPageCabs extends PagesBaseClass {
 		try {
 			List<Integer> prices = new ArrayList<Integer>();
 			for (WebElement element	 : price_Elements) {
-				String temp = element.getText();
-				System.out.println(temp);
-				
+				String temp = element.getText();				
 				temp = temp.replace(",", "");
 				temp = temp.substring(2);
 				prices.add(Integer.parseInt(temp));

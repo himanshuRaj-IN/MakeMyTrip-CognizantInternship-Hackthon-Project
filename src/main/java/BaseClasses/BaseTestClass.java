@@ -35,13 +35,18 @@ public class BaseTestClass {
 	
 	@BeforeSuite(alwaysRun = true)
 	public void setup() {
+		Logger.info("Invoking Browser ......... ");
 		invokeBrowser();
+		Logger.info("Creating Extent Report instance ........");
 		report = ExtentReportManager.getReportInstance();
 	}
 	
 	@AfterSuite(alwaysRun = true)
 	public void tearDown() {
+		Logger.info("Tear Down Method Invoked. ");
+		Logger.info("Quiting Driver.....");
 		driver.quit();
+		Logger.info("Flushing Report.");
 		report.flush();
 	}
 	
@@ -49,16 +54,18 @@ public class BaseTestClass {
 	public void setTestResult(ITestResult result) throws IOException {
 		
 		String	screenshot = CaptureScreenshot.captureScreenShot(driver, CaptureScreenshot.generateFileName(result));
-		
+		Logger.info("Screenshot captured.");
 		if(result.getStatus() == ITestResult.FAILURE) {
+			Logger.warn(result.getName()+" : FAILLED");
 			logger.log(Status.FAIL,result.getName()+"  : FAILLED");
-			logger.log(Status.FAIL,result.getThrowable());
-			
+			logger.log(Status.FAIL,result.getThrowable());	
 			logger.fail("Screenshot : "+ logger.addScreenCaptureFromPath(screenshot));
 		}else if(result.getStatus() == ITestResult.SUCCESS) {
+			Logger.info(result.getName()+" : PASSED");
 			logger.log(Status.PASS, result.getName() + "  : PASSED");
 			logger.pass("Screenshot : "+ logger.addScreenCaptureFromPath(screenshot));
 		}else if(result.getStatus() == ITestResult.SKIP) {
+			Logger.warn(result.getName()+" : SKIPPED ");
 			logger.skip(result.getName());
 		}
 	}
