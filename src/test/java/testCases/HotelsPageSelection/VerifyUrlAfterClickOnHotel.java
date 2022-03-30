@@ -1,4 +1,4 @@
-package testCases.HotelTab;
+package testCases.HotelsPageSelection;
 
 import org.testng.annotations.Test;
 
@@ -9,21 +9,20 @@ import pages.HotelsPage;
 import pages.LandingPage;
 
 
-public class CheckHotelOption extends BaseTestClass {
-	
+public class VerifyUrlAfterClickOnHotel extends BaseTestClass{
 	LandingPage landingPage;
 	CabsPage cabsPage;
 	HotelsPage hotelsPage;
 	
 	
 	@Test
-	public void checkHotelOption() {
-		logger = report.createTest("Check Hotel Option");
+	public void verifyUrlOfHotel() {
+		logger = report.createTest("Verify Url of  Hotel Option");
 		PagesBaseClass objPagesBaseClass = new PagesBaseClass(driver, logger);
 		landingPage = objPagesBaseClass.OpenApplication();
 		landingPage.closeLoginPopUp();
 		hotelsPage=landingPage.getHotelsPage();
-		hotelsPage.CheckHotelMenuOption();	
+		hotelsPage.ClickOnHotelMenu();	
+		hotelsPage.verifyHotelsPageURL();
 	}
-
 }

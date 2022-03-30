@@ -1,28 +1,28 @@
-package testCases.HotelTab;
+package testCases.VerifyRoomsAndAdultsFromHotelsPage;
 
 import org.testng.annotations.Test;
 
 import BaseClasses.BaseTestClass;
 import BaseClasses.PagesBaseClass;
 import pages.CabsPage;
-import pages.HotelsPage;
 import pages.LandingPage;
 
 
-public class VerifyUrlAfterClickOnHotel extends BaseTestClass{
+public class VerifyRoomDetailBox extends BaseTestClass {
+
 	LandingPage landingPage;
 	CabsPage cabsPage;
-	HotelsPage hotelsPage;
 	
 	
 	@Test
-	public void verifyUrlOfHotel() {
-		logger = report.createTest("Verify Url of  Hotel Option");
+	public void checkRoomDetailBox() {
+		logger = report.createTest("Verify Room and Guest box ");
 		PagesBaseClass objPagesBaseClass = new PagesBaseClass(driver, logger);
 		landingPage = objPagesBaseClass.OpenApplication();
 		landingPage.closeLoginPopUp();
 		hotelsPage=landingPage.getHotelsPage();
 		hotelsPage.ClickOnHotelMenu();	
-		hotelsPage.verifyHotelsPageURL();
+		hotelsPage.ClickOnRoomAndGuest();	
+		hotelsPage.verifyRoomDetailsPopUp();
 	}
 }
