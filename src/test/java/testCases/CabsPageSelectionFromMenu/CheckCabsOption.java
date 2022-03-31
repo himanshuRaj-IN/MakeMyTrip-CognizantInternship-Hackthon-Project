@@ -16,7 +16,7 @@ public class CheckCabsOption extends BaseTestClass{
 	CabsPage cabsPage;
 	
 	
-	@Test
+	@Test(groups= {"Smoke"})
 	public void checkCabsOption() {
 		Logger.info("Check Cabs Option Test Case initiated.");
 		logger = report.createTest("Check Cabs Option");

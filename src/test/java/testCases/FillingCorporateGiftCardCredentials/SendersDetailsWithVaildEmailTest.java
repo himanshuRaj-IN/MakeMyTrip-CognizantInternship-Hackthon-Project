@@ -9,7 +9,7 @@ import BaseClasses.PagesBaseClass;
 
 public class SendersDetailsWithVaildEmailTest extends BaseTestClass {
 	private static final Logger Logger = LogManager.getLogger(SendersDetailsWithVaildEmailTest.class);
-	@Test
+	@Test(groups= {"Smoke"})
 	public void sendersDetailsWithValidEmail() throws InterruptedException {
 		logger = report.createTest("Senders Details With Valid Email");
 		Logger.info("Senders Details With Valid Email");

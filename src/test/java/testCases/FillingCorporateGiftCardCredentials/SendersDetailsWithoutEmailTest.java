@@ -9,7 +9,7 @@ import BaseClasses.PagesBaseClass;
 
 public class SendersDetailsWithoutEmailTest extends BaseTestClass{
 	
-	@Test
+	@Test(groups= {"Regression"})
 	public void sendersDetailsWithoutEmail() throws InterruptedException {
 		logger = report.createTest("Senders Details Without Email Id");
 		PagesBaseClass objPagesBaseClass = new PagesBaseClass(driver, logger);

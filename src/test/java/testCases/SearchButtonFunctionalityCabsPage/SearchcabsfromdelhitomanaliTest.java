@@ -3,7 +3,7 @@ package testCases.SearchButtonFunctionalityCabsPage;
 import org.testng.annotations.Test;
 import BaseClasses.BaseTestClass;
 import BaseClasses.PagesBaseClass;
-import testCases.HotelTab.CheckHotelOption;
+import testCases.HotelsPageSelection.CheckHotelOption;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -11,7 +11,7 @@ import org.apache.logging.log4j.Logger;
 public class SearchcabsfromdelhitomanaliTest extends BaseTestClass{
 	private static final Logger Logger = LogManager.getLogger(SearchcabsfromdelhitomanaliTest.class);
 	
-	@Test
+	@Test(groups= {"Regression"})
 	public void searchcabsfromdelhitomanali() {
 		logger = report.createTest("Search Cabs from Delhi to Manali ");
 		Logger.info("Searching Cabs from Delhi to Manali ");

@@ -9,7 +9,7 @@ import BaseClasses.PagesBaseClass;
 public class CitySelection_TOTest extends BaseTestClass {
 	private static final Logger Logger = LogManager.getLogger(CitySelection_TOTest.class);
 	
-	@Test
+	@Test(groups= {"Regression"})
 	public void citySelection_TO() {
 		logger = report.createTest("TO City Selection");
 		Logger.info("TO City Selection---> Successful");

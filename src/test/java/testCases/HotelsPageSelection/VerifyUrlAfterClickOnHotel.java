@@ -1,4 +1,4 @@
-package testCases.HotelTab;
+package testCases.HotelsPageSelection;
 
 import org.testng.annotations.Test;
 import org.apache.logging.log4j.LogManager;
@@ -17,7 +17,7 @@ public class VerifyUrlAfterClickOnHotel extends BaseTestClass{
 	HotelsPage hotelsPage;
 	
 	
-	@Test
+	@Test(groups= {"Smoke"})
 	public void verifyUrlOfHotel() {
 		logger = report.createTest("Verify Url of  Hotel Option");
 		Logger.info("Verify Url of  Hotel Option");

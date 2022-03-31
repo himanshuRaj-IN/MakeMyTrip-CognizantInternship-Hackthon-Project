@@ -10,7 +10,7 @@ import BaseClasses.PagesBaseClass;
     public class PickupTimeSelection extends BaseTestClass {
 	private static final Logger Logger = LogManager.getLogger(PickupTimeSelection.class);
 	
-	@Test
+	@Test(groups= {"Smoke"})
 	public void pickupTimeSelection() {
 		logger = report.createTest("Select Pickup-Time");
 		Logger.info("Pickup-Time is Selection:--->Successful");		

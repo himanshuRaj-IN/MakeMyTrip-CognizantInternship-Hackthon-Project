@@ -10,7 +10,7 @@ import testCases.CabsPageSelectionFromMenu.CheckCabsOption;
 public class CitySelection_FROMTest extends BaseTestClass {
 	private static final Logger Logger = LogManager.getLogger(CitySelection_FROMTest.class);
 		
-	@Test
+	@Test(groups= {"Regression"})
 	public void citySelection_FROM() {
 		logger = report.createTest("FROM City Selection");
 		Logger.info("'FROM'City Selection test case is initiated.");

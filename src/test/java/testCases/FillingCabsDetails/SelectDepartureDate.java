@@ -14,7 +14,7 @@ import bsh.ParseException;
 public class SelectDepartureDate extends BaseTestClass{
 	private static final Logger Logger = LogManager.getLogger(SelectDepartureDate.class);
 	
-	@Test
+	@Test(groups= {"Regression"})
 	public void selectDepatureDate() throws java.text.ParseException, ParseException {
 		logger = report.createTest("Select Departure Date ");
 		Logger.info("Departure Date Selection--->Successful");

@@ -13,7 +13,7 @@ public class EmptySendersDetailsTest extends BaseTestClass {
 	private static final Logger Logger = LogManager.getLogger(EmptySendersDetailsTest.class);
 	
 	
-	@Test
+	@Test(groups= {"Smoke"})
 	public void EmptysendersdetailsTest() throws InterruptedException {
 		logger = report.createTest(" Blank Senders Details Check");
 		Logger.info("Checking Warning message When Senders details are left empty");

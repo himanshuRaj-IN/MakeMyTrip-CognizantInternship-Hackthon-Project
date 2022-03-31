@@ -6,12 +6,12 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import BaseClasses.BaseTestClass;
 import BaseClasses.PagesBaseClass;
-import testCases.HotelTab.CheckHotelOption;
+import testCases.HotelsPageSelection.CheckHotelOption;
 
 public class SearchCabsFromToDataDrivenTest extends BaseTestClass{
 	private static final Logger Logger = LogManager.getLogger(SearchCabsFromToDataDrivenTest.class);
 
-	@Test(dataProvider = "FillingCabDetailsData", dataProviderClass = utilities.TestDataProvider.class)
+	@Test(dataProvider = "FillingCabDetailsData", dataProviderClass = utilities.TestDataProvider.class,groups = "Regression")
 	public void searchCabsFromToDataDrivenTest(Hashtable<String, String> table) {
 		logger = report.createTest("Data Driven Search Cabs");
 		Logger.info("Data Driven Search Cabs");

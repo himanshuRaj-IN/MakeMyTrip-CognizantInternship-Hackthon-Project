@@ -1,4 +1,4 @@
-package testCases.HotelTab;
+package testCases.VerifyRoomsandAdultsfromHotelsPage;
 
 import org.testng.annotations.Test;
 
@@ -16,7 +16,7 @@ public class VerifyRoomDetailBox extends BaseTestClass {
 	CabsPage cabsPage;
 	
 	
-	@Test
+	@Test(groups= {"Regression"})
 	public void checkRoomDetailBox() {
 		logger = report.createTest("Verify Room and Guest box ");
 		Logger.info("Verify Room and Guest box");

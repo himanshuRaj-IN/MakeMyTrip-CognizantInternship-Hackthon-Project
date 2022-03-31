@@ -23,7 +23,7 @@ import utilities.ReadPropertiesFile;
 public class SelectCorporateGiftTest extends BaseTestClass {
 	private static final Logger Logger = LogManager.getLogger(SelectCorporateGiftTest.class);
 		
-	@Test
+	@Test(groups= {"Smoke"})
 	public void selectCorporateGiftTest() throws InterruptedException {
 		logger = report.createTest("Navigate Corporate Gift Cards Page");
 		Logger.info("Navigate Corporate Gift Cards Page Test initiated.");

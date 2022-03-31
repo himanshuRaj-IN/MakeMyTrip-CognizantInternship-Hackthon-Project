@@ -10,7 +10,7 @@ import testCases.FillingCorporateGiftCardCredentials.SendersDetailsWithoutNameTe
 
 public class NavigateGiftCardsPageTest extends BaseTestClass{
 	private static final Logger Logger = LogManager.getLogger(NavigateGiftCardsPageTest.class);
-	@Test
+	@Test(groups= {"Smoke"})
 	public void navigateGiftCardsPageTest() {
 		logger = report.createTest("Navigate Gift Cards Page");
 		Logger.info(" Navigate Gift Cards Page Test initiated" );

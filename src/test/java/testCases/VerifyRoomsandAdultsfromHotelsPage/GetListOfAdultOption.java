@@ -1,4 +1,4 @@
-package testCases.HotelTab;
+package testCases.VerifyRoomsandAdultsfromHotelsPage;
 
 import org.testng.annotations.Test;
 import org.apache.logging.log4j.LogManager;
@@ -14,7 +14,7 @@ public class GetListOfAdultOption extends BaseTestClass {
 	LandingPage landingPage;
 	CabsPage cabsPage;
 
-	@Test
+	@Test(groups= {"Regression"})
 	public void listOfAdultOption() {
 		logger = report.createTest("List of Adult option");
 		Logger.info("List of numbers of adults in Room1");

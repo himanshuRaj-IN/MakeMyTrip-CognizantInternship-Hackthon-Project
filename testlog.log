@@ -3,3 +3,592 @@
 17:37:10:390 [main] INFO  BaseClasses.BaseTestClass - Tear Down Method Invoked. 
 17:37:10:391 [main] INFO  BaseClasses.BaseTestClass - Quiting Driver.....
 17:37:10:637 [main] INFO  BaseClasses.BaseTestClass - Flushing Report.
+18:29:28:328 [main] INFO  BaseClasses.BaseTestClass - Invoking Browser ......... 
+18:29:28:334 [main] INFO  BaseClasses.BaseTestClass - invoking Browser ....
+18:29:31:430 [main] INFO  BaseClasses.BaseTestClass - Creating Extent Report instance ........
+18:29:31:701 [main] INFO  testCases.CabsPageSelectionFromMenu.CheckCabsOption - Check Cabs Option Test Case initiated.
+18:29:37:745 [main] INFO  BaseClasses.PagesBaseClass - Landed on MakeMyTrip Landing page.
+18:29:38:364 [main] INFO  pages.LandingPage - Login Pop Up Closed sucessfully.
+18:29:38:436 [main] INFO  pages.LandingPage - PASS : Element is present on Landing page.
+18:29:38:479 [main] INFO  pages.LandingPage - PASS : Element is Enabled on Landing page.
+18:29:38:926 [main] INFO  BaseClasses.BaseTestClass - Screenshot captured.
+18:29:38:926 [main] INFO  BaseClasses.BaseTestClass - checkCabsOption : PASSED
+18:29:38:940 [main] INFO  testCases.CabsPageSelectionFromMenu.NavigateCabsPageTest - Navigate Cabs Page Test Case initiated.
+18:29:41:176 [main] INFO  BaseClasses.PagesBaseClass - Landed on MakeMyTrip Landing page.
+18:29:44:482 [main] INFO  pages.LandingPage - Login Pop Up Closed sucessfully.
+18:29:44:774 [main] INFO  pages.LandingPage - Clicked on Cabs icon.
+18:29:45:120 [main] INFO  pages.CabsPage - PASS : URL Verified [ Got -> https://www.makemytrip.com/cabs/ ]
+18:29:45:172 [main] INFO  pages.CabsPage - PASS : Sub heading Verified [ Got -> Cab Booking ]
+18:29:45:180 [main] INFO  pages.CabsPage - PASS : URL Verified [ Got -> https://www.makemytrip.com/cabs/ ]
+18:29:45:591 [main] INFO  BaseClasses.BaseTestClass - Screenshot captured.
+18:29:45:591 [main] INFO  BaseClasses.BaseTestClass - navigateCabsPageTest : PASSED
+18:29:45:621 [main] INFO  BaseClasses.BaseTestClass - Tear Down Method Invoked. 
+18:29:45:621 [main] INFO  BaseClasses.BaseTestClass - Quiting Driver.....
+18:29:46:042 [main] INFO  BaseClasses.BaseTestClass - Flushing Report.
+18:47:22:146 [main] INFO  BaseClasses.BaseTestClass - Invoking Browser ......... 
+18:47:22:244 [main] INFO  BaseClasses.BaseTestClass - invoking Browser ....
+18:47:25:504 [main] INFO  BaseClasses.BaseTestClass - Creating Extent Report instance ........
+18:47:25:802 [main] INFO  testCases.FillingCabsDetails.CitySelection_FROMTest - 'FROM'City Selection test case is initiated.
+18:47:30:909 [main] INFO  BaseClasses.PagesBaseClass - Landed on MakeMyTrip Landing page.
+18:47:31:443 [main] INFO  pages.LandingPage - Login Pop Up Closed sucessfully.
+18:47:31:881 [main] INFO  pages.LandingPage - Clicked on Cabs icon.
+18:47:32:402 [main] INFO  pages.CabsPage - Clicked on FROM City Lebel
+18:47:33:874 [main] INFO  pages.CabsPage - Entered Delhi in appeared placeholder.
+18:47:34:002 [main] INFO  pages.CabsPage - Suggestions appeared for input.
+18:47:34:172 [main] INFO  pages.CabsPage - City Selected from suggestions.
+18:47:34:219 [main] INFO  pages.CabsPage - Selected city is verified
+18:47:34:637 [main] INFO  BaseClasses.BaseTestClass - Screenshot captured.
+18:47:34:638 [main] INFO  BaseClasses.BaseTestClass - citySelection_FROM : PASSED
+18:47:34:645 [main] INFO  testCases.FillingCabsDetails.PickupTimeSelection - Pickup-Time is Selection:--->Successful
+18:47:36:453 [main] INFO  BaseClasses.PagesBaseClass - Landed on MakeMyTrip Landing page.
+18:47:38:820 [main] INFO  pages.LandingPage - Login Pop Up Closed sucessfully.
+18:47:39:056 [main] INFO  pages.LandingPage - Clicked on Cabs icon.
+18:47:39:622 [main] INFO  pages.CabsPage - Clicked on PickUp.
+18:47:41:067 [main] INFO  pages.CabsPage - Selected PickUP Time : 06:30 AM
+18:47:41:105 [main] INFO  pages.CabsPage - Pickup time verified got : 06:30 AM
+18:47:41:445 [main] INFO  BaseClasses.BaseTestClass - Screenshot captured.
+18:47:41:446 [main] INFO  BaseClasses.BaseTestClass - pickupTimeSelection : PASSED
+18:47:41:448 [main] INFO  testCases.HotelsPageSelection.CheckHotelOption - Checking Hotels Option
+18:47:43:426 [main] INFO  BaseClasses.PagesBaseClass - Landed on MakeMyTrip Landing page.
+18:47:45:769 [main] INFO  pages.LandingPage - Login Pop Up Closed sucessfully.
+18:47:45:848 [main] INFO  pages.LandingPage - Clicked on Hotels icon.
+18:47:46:049 [main] INFO  pages.HotelsPage - PASS : Hotel is present on Landing page.
+18:47:46:076 [main] INFO  pages.HotelsPage - PASS : Hotel is Enabled on Landing page.
+18:47:46:077 [main] INFO  testCases.HotelsPageSelection.CheckHotelOption - Hotel option Verification---> Successful
+18:47:46:421 [main] INFO  BaseClasses.BaseTestClass - Screenshot captured.
+18:47:46:421 [main] INFO  BaseClasses.BaseTestClass - checkHotelOption : PASSED
+18:47:46:427 [main] INFO  testCases.FillingCabsDetails.CitySelection_TOTest - TO City Selection---> Successful
+18:47:48:432 [main] INFO  BaseClasses.PagesBaseClass - Landed on MakeMyTrip Landing page.
+18:47:51:494 [main] INFO  pages.LandingPage - Login Pop Up Closed sucessfully.
+18:47:51:760 [main] INFO  pages.LandingPage - Clicked on Cabs icon.
+18:47:52:338 [main] INFO  pages.CabsPage - Clicked on To City Lebel
+18:47:53:838 [main] INFO  pages.CabsPage - Entered Manali in appeared placeholder.
+18:47:53:929 [main] INFO  pages.CabsPage - Suggestions appeared for input.
+18:47:54:080 [main] INFO  pages.CabsPage - City Selected from suggestions.
+18:47:54:117 [main] INFO  pages.CabsPage - Selected city is verified
+18:47:54:598 [main] INFO  BaseClasses.BaseTestClass - Screenshot captured.
+18:47:54:599 [main] INFO  BaseClasses.BaseTestClass - citySelection_TO : PASSED
+18:47:54:602 [main] INFO  testCases.SearchButtonFunctionalityCabsPage.SearchcabsfromdelhitomanaliTest - Searching Cabs from Delhi to Manali 
+18:47:56:604 [main] INFO  BaseClasses.PagesBaseClass - Landed on MakeMyTrip Landing page.
+18:47:58:877 [main] INFO  pages.LandingPage - Login Pop Up Closed sucessfully.
+18:47:59:110 [main] INFO  pages.LandingPage - Clicked on Cabs icon.
+18:47:59:667 [main] INFO  pages.CabsPage - Clicked on FROM City Lebel
+18:48:00:923 [main] INFO  pages.CabsPage - Entered Delhi in appeared placeholder.
+18:48:01:018 [main] INFO  pages.CabsPage - Suggestions appeared for input.
+18:48:01:170 [main] INFO  pages.CabsPage - City Selected from suggestions.
+18:48:01:210 [main] INFO  pages.CabsPage - Selected city is verified
+18:48:02:689 [main] INFO  pages.CabsPage - Entered Manali in appeared placeholder.
+18:48:02:796 [main] INFO  pages.CabsPage - Suggestions appeared for input.
+18:48:02:968 [main] INFO  pages.CabsPage - City Selected from suggestions.
+18:48:02:999 [main] INFO  pages.CabsPage - Selected city is verified
+18:48:03:171 [main] INFO  pages.CabsPage - Clicked on Departure Date.
+18:48:04:330 [main] INFO  pages.CabsPage - Departure Date id Slelected to 02/04/2022
+18:48:04:380 [main] INFO  pages.CabsPage - Departure Date verified  Got : 2 Apr22
+18:48:04:575 [main] INFO  pages.CabsPage - Clicked on PickUp.
+18:48:05:162 [main] INFO  pages.CabsPage - Selected PickUP Time : 01:40 AM
+18:48:05:205 [main] INFO  pages.CabsPage - Pickup time verified got : 01:40 AM
+18:48:08:227 [main] INFO  pages.CabsPage - Clicked on Search Button.
+18:48:10:899 [main] INFO  pages.SearchPageCabs - Search List  appeared 
+18:48:10:900 [main] INFO  testCases.SearchButtonFunctionalityCabsPage.SearchcabsfromdelhitomanaliTest - Searching Cabs from Delhi to Manali---> Successful
+18:48:16:249 [main] INFO  BaseClasses.BaseTestClass - Screenshot captured.
+18:48:16:249 [main] INFO  BaseClasses.BaseTestClass - searchcabsfromdelhitomanali : PASSED
+18:48:16:251 [main] INFO  testCases.GiftCardPageSelection.SelectCorporateGiftTest - Navigate Corporate Gift Cards Page Test initiated.
+18:48:18:363 [main] INFO  BaseClasses.PagesBaseClass - Landed on MakeMyTrip Landing page.
+18:48:20:964 [main] INFO  pages.LandingPage - Login Pop Up Closed sucessfully.
+18:48:21:173 [main] INFO  pages.LandingPage - Clicked on Gifts page icon.
+18:48:21:250 [main] INFO  pages.GiftCardsPage - Shifting driver focus to the Gift cards page 
+18:48:23:602 [main] INFO  pages.GiftCardsPage - PASS : URL Verified [ Got -> https://www.makemytrip.com/gift-cards/ ]
+18:48:23:735 [main] INFO  pages.GiftCardsPage - Clicked on corporate Gift Card
+18:48:23:736 [main] INFO  testCases.GiftCardPageSelection.SelectCorporateGiftTest - Navigation to Corporate Gift Cards Page --> Successful 
+18:48:24:190 [main] INFO  BaseClasses.BaseTestClass - Screenshot captured.
+18:48:24:190 [main] INFO  BaseClasses.BaseTestClass - selectCorporateGiftTest : PASSED
+18:48:24:192 [main] INFO  testCases.HotelsPageSelection.VerifyUrlAfterClickOnHotel - Verify Url of  Hotel Option
+18:48:26:079 [main] INFO  BaseClasses.PagesBaseClass - Landed on MakeMyTrip Landing page.
+18:48:28:757 [main] INFO  pages.LandingPage - Login Pop Up Closed sucessfully.
+18:48:28:759 [main] INFO  pages.LandingPage - Clicked on Hotels icon.
+18:48:29:005 [main] INFO  pages.HotelsPage - Click on hotels Menu
+18:48:29:187 [main] INFO  pages.HotelsPage - PASS : URL Verified [ Got ->https://www.makemytrip.com/hotels/ ]
+18:48:29:188 [main] INFO  testCases.HotelsPageSelection.VerifyUrlAfterClickOnHotel - Verification of URL of  Hotels Option---> Successful
+18:48:29:791 [main] INFO  BaseClasses.BaseTestClass - Screenshot captured.
+18:48:29:791 [main] INFO  BaseClasses.BaseTestClass - verifyUrlOfHotel : PASSED
+18:48:30:854 [main] INFO  testCases.SearchButtonFunctionalityCabsPage.SearchCabsFromToDataDrivenTest - Data Driven Search Cabs
+18:48:32:612 [main] INFO  BaseClasses.PagesBaseClass - Landed on MakeMyTrip Landing page.
+18:48:34:786 [main] INFO  pages.LandingPage - Login Pop Up Closed sucessfully.
+18:48:35:057 [main] INFO  pages.LandingPage - Clicked on Cabs icon.
+18:48:35:677 [main] INFO  pages.CabsPage - Clicked on FROM City Lebel
+18:48:36:917 [main] INFO  pages.CabsPage - Entered patna in appeared placeholder.
+18:48:37:015 [main] INFO  pages.CabsPage - Suggestions appeared for input.
+18:48:37:183 [main] INFO  pages.CabsPage - City Selected from suggestions.
+18:48:39:395 [main] INFO  pages.CabsPage - Entered varanashi in appeared placeholder.
+18:48:39:492 [main] INFO  pages.CabsPage - Suggestions appeared for input.
+18:48:39:638 [main] INFO  pages.CabsPage - City Selected from suggestions.
+18:48:39:794 [main] INFO  pages.CabsPage - Clicked on Departure Date.
+18:48:40:929 [main] INFO  pages.CabsPage - Departure Date id Slelected to 30/04/2022
+18:48:40:972 [main] INFO  pages.CabsPage - Departure Date verified  Got : 30 Apr22
+18:48:41:142 [main] INFO  pages.CabsPage - Clicked on PickUp.
+18:48:43:191 [main] INFO  pages.CabsPage - Selected PickUP Time : 10:30 AM
+18:48:43:227 [main] INFO  pages.CabsPage - Pickup time verified got : 10:30 AM
+18:48:45:181 [main] INFO  pages.CabsPage - Clicked on Search Button.
+18:48:48:747 [main] INFO  pages.SearchPageCabs - Search List  appeared 
+18:48:48:747 [main] INFO  testCases.SearchButtonFunctionalityCabsPage.SearchCabsFromToDataDrivenTest - Data Driven Search Cabs Test---> Successful
+18:48:49:088 [main] INFO  BaseClasses.BaseTestClass - Screenshot captured.
+18:48:49:089 [main] INFO  BaseClasses.BaseTestClass - searchCabsFromToDataDrivenTest : PASSED
+18:48:49:090 [main] INFO  testCases.SearchButtonFunctionalityCabsPage.SearchCabsFromToDataDrivenTest - Data Driven Search Cabs
+18:48:52:084 [main] INFO  BaseClasses.PagesBaseClass - Landed on MakeMyTrip Landing page.
+18:48:54:153 [main] INFO  pages.LandingPage - Login Pop Up Closed sucessfully.
+18:48:54:399 [main] INFO  pages.LandingPage - Clicked on Cabs icon.
+18:48:55:007 [main] INFO  pages.CabsPage - Clicked on FROM City Lebel
+18:48:56:298 [main] INFO  pages.CabsPage - Entered Delhi in appeared placeholder.
+18:48:56:394 [main] INFO  pages.CabsPage - Suggestions appeared for input.
+18:48:56:583 [main] INFO  pages.CabsPage - City Selected from suggestions.
+18:48:58:076 [main] INFO  pages.CabsPage - Entered Manali in appeared placeholder.
+18:48:58:159 [main] INFO  pages.CabsPage - Suggestions appeared for input.
+18:48:58:313 [main] INFO  pages.CabsPage - City Selected from suggestions.
+18:48:58:469 [main] INFO  pages.CabsPage - Clicked on Departure Date.
+18:48:59:505 [main] INFO  pages.CabsPage - Changing Calender month.
+18:48:59:728 [main] INFO  pages.CabsPage - Departure Date id Slelected to 25/05/2022
+18:48:59:780 [main] INFO  pages.CabsPage - Departure Date verified  Got : 25 May22
+18:48:59:949 [main] INFO  pages.CabsPage - Clicked on PickUp.
+18:49:00:423 [main] INFO  pages.CabsPage - Selected PickUP Time : 01:40 AM
+18:49:00:460 [main] INFO  pages.CabsPage - Pickup time verified got : 01:40 AM
+18:49:02:286 [main] INFO  pages.CabsPage - Clicked on Search Button.
+18:49:06:053 [main] INFO  pages.SearchPageCabs - Search List  appeared 
+18:49:06:054 [main] INFO  testCases.SearchButtonFunctionalityCabsPage.SearchCabsFromToDataDrivenTest - Data Driven Search Cabs Test---> Successful
+18:49:06:426 [main] INFO  BaseClasses.BaseTestClass - Screenshot captured.
+18:49:06:426 [main] INFO  BaseClasses.BaseTestClass - searchCabsFromToDataDrivenTest : PASSED
+18:49:06:429 [main] INFO  testCases.SearchButtonFunctionalityCabsPage.SearchCabsFromToDataDrivenTest - Data Driven Search Cabs
+18:49:08:146 [main] INFO  BaseClasses.PagesBaseClass - Landed on MakeMyTrip Landing page.
+18:49:10:643 [main] INFO  pages.LandingPage - Login Pop Up Closed sucessfully.
+18:49:10:914 [main] INFO  pages.LandingPage - Clicked on Cabs icon.
+18:49:11:550 [main] INFO  pages.CabsPage - Clicked on FROM City Lebel
+18:49:13:278 [main] INFO  pages.CabsPage - Entered chennai in appeared placeholder.
+18:49:13:372 [main] INFO  pages.CabsPage - Suggestions appeared for input.
+18:49:13:541 [main] INFO  pages.CabsPage - City Selected from suggestions.
+18:49:15:697 [main] INFO  pages.CabsPage - Entered bangalore in appeared placeholder.
+18:49:15:777 [main] INFO  pages.CabsPage - Suggestions appeared for input.
+18:49:15:920 [main] INFO  pages.CabsPage - City Selected from suggestions.
+18:49:16:073 [main] INFO  pages.CabsPage - Clicked on Departure Date.
+18:49:17:206 [main] INFO  pages.CabsPage - Departure Date id Slelected to 10/05/2022
+18:49:17:242 [main] INFO  pages.CabsPage - Departure Date verified  Got : 10 May22
+18:49:17:413 [main] INFO  pages.CabsPage - Clicked on PickUp.
+18:49:20:597 [main] INFO  pages.CabsPage - Selected PickUP Time : 05:40 PM
+18:49:20:660 [main] INFO  pages.CabsPage - Pickup time verified got : 05:40 PM
+18:49:22:446 [main] INFO  pages.CabsPage - Clicked on Search Button.
+18:49:26:698 [main] INFO  pages.SearchPageCabs - Search List  appeared 
+18:49:26:699 [main] INFO  testCases.SearchButtonFunctionalityCabsPage.SearchCabsFromToDataDrivenTest - Data Driven Search Cabs Test---> Successful
+18:49:27:113 [main] INFO  BaseClasses.BaseTestClass - Screenshot captured.
+18:49:27:114 [main] INFO  BaseClasses.BaseTestClass - searchCabsFromToDataDrivenTest : PASSED
+18:49:27:116 [main] INFO  testCases.FillingCorporateGiftCardCredentials.SendersDetailsWithInvalidEmailTest - Checking Warning Message With InValid Email
+18:49:29:658 [main] INFO  BaseClasses.PagesBaseClass - Landed on MakeMyTrip Landing page.
+18:49:32:093 [main] INFO  pages.LandingPage - Login Pop Up Closed sucessfully.
+18:49:32:396 [main] INFO  pages.LandingPage - Clicked on Gifts page icon.
+18:49:32:398 [main] INFO  pages.GiftCardsPage - Shifting driver focus to the Gift cards page 
+18:49:35:630 [main] INFO  pages.GiftCardsPage - PASS : URL Verified [ Got -> https://www.makemytrip.com/gift-cards/ ]
+18:49:35:805 [main] INFO  pages.GiftCardsPage - Clicked on corporate Gift Card
+18:49:36:576 [main] INFO  pages.GiftCardsPage - Entered the Senders Name
+18:49:36:784 [main] INFO  pages.GiftCardsPage - Entered the Mobile No
+18:49:37:024 [main] INFO  pages.GiftCardsPage - Entered the invalid Email ID
+18:49:37:342 [main] INFO  pages.GiftCardsPage - Clicked on Buy Now Button
+18:49:37:463 [main] INFO  pages.GiftCardsPage - Getting Email error message
+18:49:37:464 [main] INFO  testCases.FillingCorporateGiftCardCredentials.SendersDetailsWithInvalidEmailTest - Error Message : Please enter a valid Email id.
+18:49:38:385 [main] INFO  BaseClasses.BaseTestClass - Screenshot captured.
+18:49:38:386 [main] INFO  BaseClasses.BaseTestClass - sendersDetailsWithInValidEmail : PASSED
+18:49:38:388 [main] INFO  testCases.FillingCorporateGiftCardCredentials.SendersDetailsWithInvalidMobileNumTest - Senders Details With InValid Mobile Number
+18:49:40:770 [main] INFO  BaseClasses.PagesBaseClass - Landed on MakeMyTrip Landing page.
+18:49:42:949 [main] INFO  pages.LandingPage - Login Pop Up Closed sucessfully.
+18:49:43:201 [main] INFO  pages.LandingPage - Clicked on Gifts page icon.
+18:49:43:203 [main] INFO  pages.GiftCardsPage - Shifting driver focus to the Gift cards page 
+18:49:45:649 [main] INFO  pages.GiftCardsPage - PASS : URL Verified [ Got -> https://www.makemytrip.com/gift-cards/ ]
+18:49:45:810 [main] INFO  pages.GiftCardsPage - Clicked on corporate Gift Card
+18:49:46:556 [main] INFO  pages.GiftCardsPage - Entered the Senders Name
+18:49:46:713 [main] INFO  pages.GiftCardsPage - Entered the Mobile No
+18:49:46:964 [main] INFO  pages.GiftCardsPage - Entered the Valid Email ID
+18:49:47:236 [main] INFO  pages.GiftCardsPage - Clicked on Buy Now Button
+18:49:47:290 [main] INFO  pages.GiftCardsPage - Getting Mobile Number error message
+18:49:47:291 [main] INFO  testCases.FillingCorporateGiftCardCredentials.SendersDetailsWithInvalidMobileNumTest - Error Message : Please enter a valid mobile number
+18:49:47:291 [main] INFO  BaseClasses.BaseTestClass - Capturing currentscreenshot ....
+18:49:48:131 [main] INFO  BaseClasses.BaseTestClass - Screenshot captured.
+18:49:48:131 [main] INFO  BaseClasses.BaseTestClass - sendersDetailsWithInValidMobileNumber : PASSED
+18:49:48:133 [main] INFO  testCases.CabsPageSelectionFromMenu.NavigateCabsPageTest - Navigate Cabs Page Test Case initiated.
+18:49:50:539 [main] INFO  BaseClasses.PagesBaseClass - Landed on MakeMyTrip Landing page.
+18:49:52:612 [main] INFO  pages.LandingPage - Login Pop Up Closed sucessfully.
+18:49:52:889 [main] INFO  pages.LandingPage - Clicked on Cabs icon.
+18:49:53:267 [main] INFO  pages.CabsPage - PASS : URL Verified [ Got -> https://www.makemytrip.com/cabs/ ]
+18:49:53:306 [main] INFO  pages.CabsPage - PASS : Sub heading Verified [ Got -> Cab Booking ]
+18:49:53:311 [main] INFO  pages.CabsPage - PASS : URL Verified [ Got -> https://www.makemytrip.com/cabs/ ]
+18:49:53:640 [main] INFO  BaseClasses.BaseTestClass - Screenshot captured.
+18:49:53:640 [main] INFO  BaseClasses.BaseTestClass - navigateCabsPageTest : PASSED
+18:49:53:642 [main] INFO  testCases.FillingCorporateGiftCardCredentials.EmptySendersDetailsTest - Checking Warning message When Senders details are left empty
+18:49:56:208 [main] INFO  BaseClasses.PagesBaseClass - Landed on MakeMyTrip Landing page.
+18:49:58:911 [main] INFO  pages.LandingPage - Login Pop Up Closed sucessfully.
+18:49:59:169 [main] INFO  pages.LandingPage - Clicked on Gifts page icon.
+18:49:59:171 [main] INFO  pages.GiftCardsPage - Shifting driver focus to the Gift cards page 
+18:50:01:470 [main] INFO  pages.GiftCardsPage - PASS : URL Verified [ Got -> https://www.makemytrip.com/gift-cards/ ]
+18:50:01:602 [main] INFO  pages.GiftCardsPage - Clicked on corporate Gift Card
+18:50:02:132 [main] INFO  pages.GiftCardsPage - Entered the Senders Name
+18:50:02:208 [main] INFO  pages.GiftCardsPage - Entered the Mobile No
+18:50:02:312 [main] INFO  pages.GiftCardsPage - Entered the Valid Email ID
+18:50:02:548 [main] INFO  pages.GiftCardsPage - Clicked on Buy Now Button
+18:50:02:623 [main] INFO  pages.GiftCardsPage - Getting Empty Credentials error message
+18:50:02:623 [main] INFO  testCases.FillingCorporateGiftCardCredentials.EmptySendersDetailsTest - Error Message :This is a mandatory field
+18:50:03:163 [main] INFO  BaseClasses.BaseTestClass - Screenshot captured.
+18:50:03:163 [main] INFO  BaseClasses.BaseTestClass - EmptysendersdetailsTest : PASSED
+18:50:05:295 [main] INFO  BaseClasses.PagesBaseClass - Landed on MakeMyTrip Landing page.
+18:50:07:980 [main] INFO  pages.LandingPage - Login Pop Up Closed sucessfully.
+18:50:08:537 [main] INFO  pages.LandingPage - Clicked on Gifts page icon.
+18:50:08:539 [main] INFO  pages.GiftCardsPage - Shifting driver focus to the Gift cards page 
+18:50:10:437 [main] INFO  pages.GiftCardsPage - PASS : URL Verified [ Got -> https://www.makemytrip.com/gift-cards/ ]
+18:50:10:594 [main] INFO  pages.GiftCardsPage - Clicked on corporate Gift Card
+18:50:11:351 [main] INFO  pages.GiftCardsPage - Entered the Senders Name
+18:50:11:558 [main] INFO  pages.GiftCardsPage - Entered the Mobile No
+18:50:11:813 [main] INFO  pages.GiftCardsPage - Clicked on Buy Now Button
+18:50:11:926 [main] INFO  pages.GiftCardsPage - Getting error message when no Email is provided
+18:50:11:928 [main] INFO  BaseClasses.BaseTestClass - Capturing currentscreenshot ....
+18:50:12:839 [main] INFO  BaseClasses.BaseTestClass - Screenshot captured.
+18:50:12:839 [main] INFO  BaseClasses.BaseTestClass - sendersDetailsWithoutEmail : PASSED
+18:50:12:841 [main] INFO  testCases.FillingCorporateGiftCardCredentials.SendersDetailsWithVaildEmailTest - Senders Details With Valid Email
+18:50:15:003 [main] INFO  BaseClasses.PagesBaseClass - Landed on MakeMyTrip Landing page.
+18:50:17:865 [main] INFO  pages.LandingPage - Login Pop Up Closed sucessfully.
+18:50:18:165 [main] INFO  pages.LandingPage - Clicked on Gifts page icon.
+18:50:18:169 [main] INFO  pages.GiftCardsPage - Shifting driver focus to the Gift cards page 
+18:50:19:518 [main] INFO  pages.GiftCardsPage - PASS : URL Verified [ Got -> https://www.makemytrip.com/gift-cards/ ]
+18:50:19:599 [main] INFO  pages.GiftCardsPage - Clicked on corporate Gift Card
+18:50:20:382 [main] INFO  pages.GiftCardsPage - Entered the Senders Name
+18:50:20:527 [main] INFO  pages.GiftCardsPage - Entered the Mobile No
+18:50:20:762 [main] INFO  pages.GiftCardsPage - Entered the Valid Email ID
+18:50:25:944 [main] INFO  pages.GiftCardsPage - Clicked on Buy Now Button
+18:50:29:474 [main] INFO  pages.GiftCardsPage - Redirected to the payment page.
+18:50:30:043 [main] INFO  BaseClasses.BaseTestClass - Screenshot captured.
+18:50:30:044 [main] INFO  BaseClasses.BaseTestClass - sendersDetailsWithValidEmail : PASSED
+18:50:30:049 [main] INFO  testCases.VerifyRoomsandAdultsfromHotelsPage.GetListOfAdultOption - List of numbers of adults in Room1
+18:50:31:338 [main] INFO  BaseClasses.PagesBaseClass - Landed on MakeMyTrip Landing page.
+18:50:47:710 [main] INFO  testCases.SearchButtonFunctionalityCabsPage.CheckSearchButtonTest - Check Search button available and enabled.
+18:51:11:735 [main] INFO  BaseClasses.BaseTestClass - Invoking Browser ......... 
+18:51:11:740 [main] INFO  BaseClasses.BaseTestClass - invoking Browser ....
+18:51:14:079 [main] INFO  BaseClasses.BaseTestClass - Creating Extent Report instance ........
+18:51:14:334 [main] INFO  testCases.FillingCabsDetails.PickupTimeSelection - Pickup-Time is Selection:--->Successful
+18:51:20:767 [main] INFO  BaseClasses.PagesBaseClass - Landed on MakeMyTrip Landing page.
+18:51:21:452 [main] INFO  pages.LandingPage - Login Pop Up Closed sucessfully.
+18:51:22:208 [main] INFO  pages.LandingPage - Clicked on Cabs icon.
+18:51:22:700 [main] INFO  pages.CabsPage - Clicked on PickUp.
+18:51:24:665 [main] INFO  pages.CabsPage - Selected PickUP Time : 06:30 AM
+18:51:24:744 [main] INFO  pages.CabsPage - Pickup time verified got : 06:30 AM
+18:51:24:763 [main] INFO  testCases.HotelsPageSelection.CheckHotelOption - Checking Hotels Option
+18:51:27:982 [main] INFO  BaseClasses.PagesBaseClass - Landed on MakeMyTrip Landing page.
+18:51:31:506 [main] INFO  pages.LandingPage - Login Pop Up Closed sucessfully.
+18:51:31:509 [main] INFO  pages.LandingPage - Clicked on Hotels icon.
+18:51:31:589 [main] INFO  pages.HotelsPage - PASS : Hotel is present on Landing page.
+18:51:31:820 [main] INFO  pages.HotelsPage - PASS : Hotel is Enabled on Landing page.
+18:51:31:820 [main] INFO  testCases.HotelsPageSelection.CheckHotelOption - Hotel option Verification---> Successful
+18:51:31:826 [main] INFO  testCases.GiftCardPageSelection.SelectCorporateGiftTest - Navigate Corporate Gift Cards Page Test initiated.
+18:51:35:015 [main] INFO  BaseClasses.PagesBaseClass - Landed on MakeMyTrip Landing page.
+18:51:38:669 [main] INFO  pages.LandingPage - Login Pop Up Closed sucessfully.
+18:51:38:958 [main] INFO  pages.LandingPage - Clicked on Gifts page icon.
+18:51:38:968 [main] INFO  pages.GiftCardsPage - Shifting driver focus to the Gift cards page 
+18:51:42:442 [main] INFO  pages.GiftCardsPage - PASS : URL Verified [ Got -> https://www.makemytrip.com/gift-cards/ ]
+18:51:42:598 [main] INFO  pages.GiftCardsPage - Clicked on corporate Gift Card
+18:51:42:599 [main] INFO  testCases.GiftCardPageSelection.SelectCorporateGiftTest - Navigation to Corporate Gift Cards Page --> Successful 
+18:51:42:896 [main] INFO  testCases.HotelsPageSelection.VerifyUrlAfterClickOnHotel - Verify Url of  Hotel Option
+18:51:46:319 [main] INFO  BaseClasses.PagesBaseClass - Landed on MakeMyTrip Landing page.
+18:51:49:904 [main] INFO  pages.LandingPage - Login Pop Up Closed sucessfully.
+18:51:49:906 [main] INFO  pages.LandingPage - Clicked on Hotels icon.
+18:51:50:230 [main] INFO  pages.HotelsPage - Click on hotels Menu
+18:51:50:402 [main] INFO  pages.HotelsPage - PASS : URL Verified [ Got ->https://www.makemytrip.com/hotels/ ]
+18:51:50:403 [main] INFO  testCases.HotelsPageSelection.VerifyUrlAfterClickOnHotel - Verification of URL of  Hotels Option---> Successful
+18:51:50:413 [main] INFO  testCases.CabsPageSelectionFromMenu.NavigateCabsPageTest - Navigate Cabs Page Test Case initiated.
+18:51:53:588 [main] INFO  BaseClasses.PagesBaseClass - Landed on MakeMyTrip Landing page.
+18:51:57:193 [main] INFO  pages.LandingPage - Login Pop Up Closed sucessfully.
+18:51:57:507 [main] INFO  pages.LandingPage - Clicked on Cabs icon.
+18:51:57:677 [main] INFO  pages.CabsPage - PASS : URL Verified [ Got -> https://www.makemytrip.com/cabs/ ]
+18:51:58:032 [main] INFO  pages.CabsPage - PASS : Sub heading Verified [ Got -> Cab Booking ]
+18:51:58:039 [main] INFO  pages.CabsPage - PASS : URL Verified [ Got -> https://www.makemytrip.com/cabs/ ]
+18:51:58:043 [main] INFO  testCases.FillingCorporateGiftCardCredentials.EmptySendersDetailsTest - Checking Warning message When Senders details are left empty
+18:52:00:723 [main] INFO  BaseClasses.PagesBaseClass - Landed on MakeMyTrip Landing page.
+18:52:03:950 [main] INFO  pages.LandingPage - Login Pop Up Closed sucessfully.
+18:52:04:311 [main] INFO  pages.LandingPage - Clicked on Gifts page icon.
+18:52:04:314 [main] INFO  pages.GiftCardsPage - Shifting driver focus to the Gift cards page 
+18:52:06:755 [main] INFO  pages.GiftCardsPage - PASS : URL Verified [ Got -> https://www.makemytrip.com/gift-cards/ ]
+18:52:06:953 [main] INFO  pages.GiftCardsPage - Clicked on corporate Gift Card
+18:52:07:691 [main] INFO  pages.GiftCardsPage - Entered the Senders Name
+18:52:07:813 [main] INFO  pages.GiftCardsPage - Entered the Mobile No
+18:52:08:075 [main] INFO  pages.GiftCardsPage - Entered the Valid Email ID
+18:52:08:343 [main] INFO  pages.GiftCardsPage - Clicked on Buy Now Button
+18:52:08:502 [main] INFO  pages.GiftCardsPage - Getting Empty Credentials error message
+18:52:08:503 [main] INFO  testCases.FillingCorporateGiftCardCredentials.EmptySendersDetailsTest - Error Message :This is a mandatory field
+18:52:08:650 [main] INFO  testCases.FillingCorporateGiftCardCredentials.SendersDetailsWithVaildEmailTest - Senders Details With Valid Email
+18:52:11:383 [main] INFO  BaseClasses.PagesBaseClass - Landed on MakeMyTrip Landing page.
+18:52:15:428 [main] INFO  pages.LandingPage - Login Pop Up Closed sucessfully.
+18:52:15:681 [main] INFO  pages.LandingPage - Clicked on Gifts page icon.
+18:52:15:684 [main] INFO  pages.GiftCardsPage - Shifting driver focus to the Gift cards page 
+18:52:17:380 [main] INFO  pages.GiftCardsPage - PASS : URL Verified [ Got -> https://www.makemytrip.com/gift-cards/ ]
+18:52:17:551 [main] INFO  pages.GiftCardsPage - Clicked on corporate Gift Card
+18:52:18:427 [main] INFO  pages.GiftCardsPage - Entered the Senders Name
+18:52:18:607 [main] INFO  pages.GiftCardsPage - Entered the Mobile No
+18:52:18:890 [main] INFO  pages.GiftCardsPage - Entered the Valid Email ID
+18:52:24:075 [main] INFO  pages.GiftCardsPage - Clicked on Buy Now Button
+18:52:27:440 [main] INFO  pages.GiftCardsPage - Redirected to the payment page.
+18:52:27:511 [main] INFO  testCases.GiftCardPageSelection.NavigateGiftCardsPageTest -  Navigate Gift Cards Page Test initiated
+18:52:31:063 [main] INFO  BaseClasses.PagesBaseClass - Landed on MakeMyTrip Landing page.
+18:52:34:143 [main] INFO  pages.LandingPage - Login Pop Up Closed sucessfully.
+18:52:34:448 [main] INFO  pages.LandingPage - Clicked on Gifts page icon.
+18:52:34:450 [main] INFO  pages.GiftCardsPage - Shifting driver focus to the Gift cards page 
+18:52:36:825 [main] INFO  pages.GiftCardsPage - PASS : URL Verified [ Got -> https://www.makemytrip.com/gift-cards/ ]
+18:52:36:825 [main] INFO  testCases.GiftCardPageSelection.NavigateGiftCardsPageTest -  Gift Cards Page URL verfication---> Successful
+18:52:36:901 [main] INFO  testCases.CabsPageSelectionFromMenu.CheckCabsOption - Check Cabs Option Test Case initiated.
+18:52:40:274 [main] INFO  BaseClasses.PagesBaseClass - Landed on MakeMyTrip Landing page.
+18:52:42:985 [main] INFO  pages.LandingPage - Login Pop Up Closed sucessfully.
+18:52:43:053 [main] INFO  pages.LandingPage - PASS : Element is present on Landing page.
+18:52:43:094 [main] INFO  pages.LandingPage - PASS : Element is Enabled on Landing page.
+18:52:43:260 [main] INFO  BaseClasses.BaseTestClass - Tear Down Method Invoked. 
+18:52:43:261 [main] INFO  BaseClasses.BaseTestClass - Quiting Driver.....
+18:52:43:843 [main] INFO  BaseClasses.BaseTestClass - Flushing Report.
+18:57:00:187 [main] INFO  BaseClasses.BaseTestClass - Invoking Browser ......... 
+18:57:00:192 [main] INFO  BaseClasses.BaseTestClass - invoking Browser ....
+18:57:02:518 [main] INFO  BaseClasses.BaseTestClass - Creating Extent Report instance ........
+18:57:02:773 [main] INFO  testCases.FillingCabsDetails.CitySelection_FROMTest - 'FROM'City Selection test case is initiated.
+18:57:07:877 [main] INFO  BaseClasses.PagesBaseClass - Landed on MakeMyTrip Landing page.
+18:57:08:430 [main] INFO  pages.LandingPage - Login Pop Up Closed sucessfully.
+18:57:08:699 [main] INFO  pages.LandingPage - Clicked on Cabs icon.
+18:57:09:477 [main] INFO  pages.CabsPage - Clicked on FROM City Lebel
+18:57:10:967 [main] INFO  pages.CabsPage - Entered Delhi in appeared placeholder.
+18:57:11:143 [main] INFO  pages.CabsPage - Suggestions appeared for input.
+18:57:11:358 [main] INFO  pages.CabsPage - City Selected from suggestions.
+18:57:11:423 [main] INFO  pages.CabsPage - Selected city is verified
+18:57:11:440 [main] INFO  testCases.FillingCabsDetails.CitySelection_TOTest - TO City Selection---> Successful
+18:57:13:926 [main] INFO  BaseClasses.PagesBaseClass - Landed on MakeMyTrip Landing page.
+18:57:17:053 [main] INFO  pages.LandingPage - Login Pop Up Closed sucessfully.
+18:57:17:347 [main] INFO  pages.LandingPage - Clicked on Cabs icon.
+18:57:17:893 [main] INFO  pages.CabsPage - Clicked on To City Lebel
+18:57:19:402 [main] INFO  pages.CabsPage - Entered Manali in appeared placeholder.
+18:57:19:504 [main] INFO  pages.CabsPage - Suggestions appeared for input.
+18:57:19:666 [main] INFO  pages.CabsPage - City Selected from suggestions.
+18:57:19:703 [main] INFO  pages.CabsPage - Selected city is verified
+18:57:19:706 [main] INFO  testCases.SearchButtonFunctionalityCabsPage.SearchcabsfromdelhitomanaliTest - Searching Cabs from Delhi to Manali 
+18:57:22:598 [main] INFO  BaseClasses.PagesBaseClass - Landed on MakeMyTrip Landing page.
+18:57:24:743 [main] INFO  pages.LandingPage - Login Pop Up Closed sucessfully.
+18:57:25:007 [main] INFO  pages.LandingPage - Clicked on Cabs icon.
+18:57:25:579 [main] INFO  pages.CabsPage - Clicked on FROM City Lebel
+18:57:26:884 [main] INFO  pages.CabsPage - Entered Delhi in appeared placeholder.
+18:57:26:999 [main] INFO  pages.CabsPage - Suggestions appeared for input.
+18:57:27:171 [main] INFO  pages.CabsPage - City Selected from suggestions.
+18:57:27:225 [main] INFO  pages.CabsPage - Selected city is verified
+18:57:28:716 [main] INFO  pages.CabsPage - Entered Manali in appeared placeholder.
+18:57:28:817 [main] INFO  pages.CabsPage - Suggestions appeared for input.
+18:57:28:959 [main] INFO  pages.CabsPage - City Selected from suggestions.
+18:57:29:016 [main] INFO  pages.CabsPage - Selected city is verified
+18:57:29:187 [main] INFO  pages.CabsPage - Clicked on Departure Date.
+18:57:30:373 [main] INFO  pages.CabsPage - Departure Date id Slelected to 02/04/2022
+18:57:30:450 [main] INFO  pages.CabsPage - Departure Date verified  Got : 2 Apr22
+18:57:30:722 [main] INFO  pages.CabsPage - Clicked on PickUp.
+18:57:31:427 [main] INFO  pages.CabsPage - Selected PickUP Time : 01:40 AM
+18:57:31:484 [main] INFO  pages.CabsPage - Pickup time verified got : 01:40 AM
+18:57:34:423 [main] INFO  pages.CabsPage - Clicked on Search Button.
+18:57:38:221 [main] INFO  pages.SearchPageCabs - Search List  appeared 
+18:57:38:221 [main] INFO  testCases.SearchButtonFunctionalityCabsPage.SearchcabsfromdelhitomanaliTest - Searching Cabs from Delhi to Manali---> Successful
+18:57:44:431 [main] INFO  testCases.SearchButtonFunctionalityCabsPage.SearchCabsFromToDataDrivenTest - Data Driven Search Cabs
+18:57:48:186 [main] INFO  BaseClasses.PagesBaseClass - Landed on MakeMyTrip Landing page.
+18:57:51:472 [main] INFO  pages.LandingPage - Login Pop Up Closed sucessfully.
+18:57:51:767 [main] INFO  pages.LandingPage - Clicked on Cabs icon.
+18:57:52:387 [main] INFO  pages.CabsPage - Clicked on FROM City Lebel
+18:57:53:666 [main] INFO  pages.CabsPage - Entered patna in appeared placeholder.
+18:57:53:799 [main] INFO  pages.CabsPage - Suggestions appeared for input.
+18:57:53:970 [main] INFO  pages.CabsPage - City Selected from suggestions.
+18:57:56:255 [main] INFO  pages.CabsPage - Entered varanashi in appeared placeholder.
+18:57:56:358 [main] INFO  pages.CabsPage - Suggestions appeared for input.
+18:57:56:505 [main] INFO  pages.CabsPage - City Selected from suggestions.
+18:57:56:664 [main] INFO  pages.CabsPage - Clicked on Departure Date.
+18:57:57:799 [main] INFO  pages.CabsPage - Departure Date id Slelected to 30/04/2022
+18:57:57:837 [main] INFO  pages.CabsPage - Departure Date verified  Got : 30 Apr22
+18:57:58:057 [main] INFO  pages.CabsPage - Clicked on PickUp.
+18:58:00:271 [main] INFO  pages.CabsPage - Selected PickUP Time : 10:30 AM
+18:58:00:307 [main] INFO  pages.CabsPage - Pickup time verified got : 10:30 AM
+18:58:02:369 [main] INFO  pages.CabsPage - Clicked on Search Button.
+18:58:07:360 [main] INFO  pages.SearchPageCabs - Search List  appeared 
+18:58:07:361 [main] INFO  testCases.SearchButtonFunctionalityCabsPage.SearchCabsFromToDataDrivenTest - Data Driven Search Cabs Test---> Successful
+18:58:07:370 [main] INFO  testCases.SearchButtonFunctionalityCabsPage.SearchCabsFromToDataDrivenTest - Data Driven Search Cabs
+18:58:09:608 [main] INFO  BaseClasses.PagesBaseClass - Landed on MakeMyTrip Landing page.
+18:58:12:971 [main] INFO  pages.LandingPage - Login Pop Up Closed sucessfully.
+18:58:13:273 [main] INFO  pages.LandingPage - Clicked on Cabs icon.
+18:58:13:887 [main] INFO  pages.CabsPage - Clicked on FROM City Lebel
+18:58:15:161 [main] INFO  pages.CabsPage - Entered Delhi in appeared placeholder.
+18:58:15:271 [main] INFO  pages.CabsPage - Suggestions appeared for input.
+18:58:15:431 [main] INFO  pages.CabsPage - City Selected from suggestions.
+18:58:16:918 [main] INFO  pages.CabsPage - Entered Manali in appeared placeholder.
+18:58:17:011 [main] INFO  pages.CabsPage - Suggestions appeared for input.
+18:58:17:157 [main] INFO  pages.CabsPage - City Selected from suggestions.
+18:58:17:305 [main] INFO  pages.CabsPage - Clicked on Departure Date.
+18:58:18:347 [main] INFO  pages.CabsPage - Changing Calender month.
+18:58:19:480 [main] INFO  testCases.SearchButtonFunctionalityCabsPage.SearchCabsFromToDataDrivenTest - Data Driven Search Cabs
+18:58:21:431 [main] INFO  BaseClasses.PagesBaseClass - Landed on MakeMyTrip Landing page.
+18:58:23:572 [main] INFO  pages.LandingPage - Login Pop Up Closed sucessfully.
+18:58:23:826 [main] INFO  pages.LandingPage - Clicked on Cabs icon.
+18:58:24:439 [main] INFO  pages.CabsPage - Clicked on FROM City Lebel
+18:58:26:222 [main] INFO  pages.CabsPage - Entered chennai in appeared placeholder.
+18:58:26:322 [main] INFO  pages.CabsPage - Suggestions appeared for input.
+18:58:26:520 [main] INFO  pages.CabsPage - City Selected from suggestions.
+18:58:28:725 [main] INFO  pages.CabsPage - Entered bangalore in appeared placeholder.
+18:58:28:817 [main] INFO  pages.CabsPage - Suggestions appeared for input.
+18:58:28:953 [main] INFO  pages.CabsPage - City Selected from suggestions.
+18:58:29:107 [main] INFO  pages.CabsPage - Clicked on Departure Date.
+18:58:30:146 [main] INFO  pages.CabsPage - Changing Calender month.
+18:58:31:215 [main] INFO  testCases.FillingCorporateGiftCardCredentials.SendersDetailsWithInvalidEmailTest - Checking Warning Message With InValid Email
+18:58:32:970 [main] INFO  BaseClasses.PagesBaseClass - Landed on MakeMyTrip Landing page.
+18:58:36:584 [main] INFO  pages.LandingPage - Login Pop Up Closed sucessfully.
+18:58:36:802 [main] INFO  pages.LandingPage - Clicked on Gifts page icon.
+18:58:36:812 [main] INFO  pages.GiftCardsPage - Shifting driver focus to the Gift cards page 
+18:58:39:767 [main] INFO  pages.GiftCardsPage - PASS : URL Verified [ Got -> https://www.makemytrip.com/gift-cards/ ]
+18:58:39:905 [main] INFO  pages.GiftCardsPage - Clicked on corporate Gift Card
+18:58:40:971 [main] INFO  pages.GiftCardsPage - Entered the Senders Name
+18:58:41:233 [main] INFO  pages.GiftCardsPage - Entered the Mobile No
+18:58:41:498 [main] INFO  pages.GiftCardsPage - Entered the invalid Email ID
+18:58:41:757 [main] INFO  pages.GiftCardsPage - Clicked on Buy Now Button
+18:58:41:867 [main] INFO  pages.GiftCardsPage - Getting Email error message
+18:58:41:870 [main] INFO  testCases.FillingCorporateGiftCardCredentials.SendersDetailsWithInvalidEmailTest - Error Message : Please enter a valid Email id.
+18:58:42:316 [main] INFO  testCases.FillingCorporateGiftCardCredentials.SendersDetailsWithInvalidMobileNumTest - Senders Details With InValid Mobile Number
+18:58:45:405 [main] INFO  BaseClasses.PagesBaseClass - Landed on MakeMyTrip Landing page.
+18:58:48:655 [main] INFO  pages.LandingPage - Login Pop Up Closed sucessfully.
+18:58:48:904 [main] INFO  pages.LandingPage - Clicked on Gifts page icon.
+18:58:48:906 [main] INFO  pages.GiftCardsPage - Shifting driver focus to the Gift cards page 
+18:58:50:423 [main] INFO  pages.GiftCardsPage - PASS : URL Verified [ Got -> https://www.makemytrip.com/gift-cards/ ]
+18:58:50:587 [main] INFO  pages.GiftCardsPage - Clicked on corporate Gift Card
+18:58:51:324 [main] INFO  pages.GiftCardsPage - Entered the Senders Name
+18:58:51:585 [main] INFO  pages.GiftCardsPage - Entered the Mobile No
+18:58:51:850 [main] INFO  pages.GiftCardsPage - Entered the Valid Email ID
+18:58:52:095 [main] INFO  pages.GiftCardsPage - Clicked on Buy Now Button
+18:58:52:206 [main] INFO  pages.GiftCardsPage - Getting Mobile Number error message
+18:58:52:206 [main] INFO  testCases.FillingCorporateGiftCardCredentials.SendersDetailsWithInvalidMobileNumTest - Error Message : Please enter a valid mobile number
+18:58:52:206 [main] INFO  BaseClasses.BaseTestClass - Capturing currentscreenshot ....
+18:58:55:144 [main] INFO  BaseClasses.PagesBaseClass - Landed on MakeMyTrip Landing page.
+18:58:58:067 [main] INFO  pages.LandingPage - Login Pop Up Closed sucessfully.
+18:58:58:347 [main] INFO  pages.LandingPage - Clicked on Gifts page icon.
+18:58:58:350 [main] INFO  pages.GiftCardsPage - Shifting driver focus to the Gift cards page 
+18:59:00:573 [main] INFO  pages.GiftCardsPage - PASS : URL Verified [ Got -> https://www.makemytrip.com/gift-cards/ ]
+18:59:00:630 [main] INFO  pages.GiftCardsPage - Clicked on corporate Gift Card
+18:59:01:415 [main] INFO  pages.GiftCardsPage - Entered the Senders Name
+18:59:01:710 [main] INFO  pages.GiftCardsPage - Entered the Mobile No
+18:59:01:993 [main] INFO  pages.GiftCardsPage - Clicked on Buy Now Button
+18:59:02:273 [main] INFO  pages.GiftCardsPage - Getting error message when no Email is provided
+18:59:02:274 [main] INFO  BaseClasses.BaseTestClass - Capturing currentscreenshot ....
+18:59:02:572 [main] INFO  testCases.VerifyRoomsandAdultsfromHotelsPage.GetListOfAdultOption - List of numbers of adults in Room1
+18:59:04:898 [main] INFO  BaseClasses.PagesBaseClass - Landed on MakeMyTrip Landing page.
+18:59:07:964 [main] INFO  pages.LandingPage - Login Pop Up Closed sucessfully.
+18:59:07:969 [main] INFO  pages.LandingPage - Clicked on Hotels icon.
+18:59:08:253 [main] INFO  pages.HotelsPage - Click on hotels Menu
+18:59:09:195 [main] INFO  pages.HotelsPage - Clicking on Room and Guests 
+18:59:09:685 [main] INFO  pages.HotelsPage -  Adult List Element --> 1
+18:59:09:723 [main] INFO  pages.HotelsPage -  Adult List Element --> 2
+18:59:09:785 [main] INFO  pages.HotelsPage -  Adult List Element --> 3
+18:59:09:869 [main] INFO  pages.HotelsPage -  Adult List Element --> 4
+18:59:09:923 [main] INFO  pages.HotelsPage -  Adult List Element --> 5
+18:59:09:954 [main] INFO  pages.HotelsPage -  Adult List Element --> 6
+18:59:09:981 [main] INFO  pages.HotelsPage -  Adult List Element --> 7
+18:59:10:014 [main] INFO  pages.HotelsPage -  Adult List Element --> 8
+18:59:10:047 [main] INFO  pages.HotelsPage -  Adult List Element --> 9
+18:59:10:072 [main] INFO  pages.HotelsPage -  Adult List Element --> 10
+18:59:10:098 [main] INFO  pages.HotelsPage -  Adult List Element --> 11
+18:59:10:121 [main] INFO  pages.HotelsPage -  Adult List Element --> 12
+18:59:10:129 [main] INFO  pages.HotelsPage - List of available number of room for adult is print successfully.
+18:59:10:129 [main] INFO  testCases.VerifyRoomsandAdultsfromHotelsPage.GetListOfAdultOption - Printing List of numbers of adults in Room 1 ---> Successful
+18:59:10:131 [main] INFO  testCases.SearchButtonFunctionalityCabsPage.CheckSearchButtonTest - Check Search button available and enabled.
+18:59:11:794 [main] INFO  BaseClasses.PagesBaseClass - Landed on MakeMyTrip Landing page.
+18:59:14:528 [main] INFO  pages.LandingPage - Login Pop Up Closed sucessfully.
+18:59:14:845 [main] INFO  pages.LandingPage - Clicked on Cabs icon.
+18:59:15:250 [main] INFO  pages.CabsPage - Search Button is displayed.
+18:59:15:364 [main] INFO  pages.CabsPage - Search Button is Enabled.
+18:59:15:365 [main] INFO  testCases.SearchButtonFunctionalityCabsPage.CheckSearchButtonTest - Verification of  availability of Search button---> Successful
+18:59:15:368 [main] INFO  testCases.FillingCorporateGiftCardCredentials.SendersDetailsWithoutNameTest - Checking Warning Message Without Name
+18:59:16:916 [main] INFO  BaseClasses.PagesBaseClass - Landed on MakeMyTrip Landing page.
+18:59:18:963 [main] INFO  pages.LandingPage - Login Pop Up Closed sucessfully.
+18:59:19:184 [main] INFO  pages.LandingPage - Clicked on Gifts page icon.
+18:59:19:191 [main] INFO  pages.GiftCardsPage - Shifting driver focus to the Gift cards page 
+18:59:21:743 [main] INFO  pages.GiftCardsPage - PASS : URL Verified [ Got -> https://www.makemytrip.com/gift-cards/ ]
+18:59:21:891 [main] INFO  pages.GiftCardsPage - Clicked on corporate Gift Card
+18:59:22:591 [main] INFO  pages.GiftCardsPage - Entered the Mobile No
+18:59:23:206 [main] INFO  pages.GiftCardsPage - Entered the Valid Email ID
+18:59:23:732 [main] INFO  pages.GiftCardsPage - Clicked on Buy Now Button
+18:59:23:899 [main] INFO  pages.GiftCardsPage - Getting error message when no name is provided
+18:59:23:900 [main] INFO  testCases.FillingCorporateGiftCardCredentials.SendersDetailsWithoutNameTest - Error Message : This is a mandatory field
+18:59:23:901 [main] INFO  BaseClasses.BaseTestClass - Capturing currentscreenshot ....
+18:59:24:244 [main] INFO  testCases.SearchResultFilters.FilterCabsByCabType - Filtering Cabs By Cab Type
+18:59:27:689 [main] INFO  BaseClasses.PagesBaseClass - Landed on MakeMyTrip Landing page.
+18:59:30:666 [main] INFO  pages.LandingPage - Login Pop Up Closed sucessfully.
+18:59:32:471 [main] INFO  pages.LandingPage - Clicked on Cabs icon.
+18:59:33:181 [main] INFO  pages.CabsPage - Clicked on FROM City Lebel
+18:59:34:502 [main] INFO  pages.CabsPage - Entered Delhi in appeared placeholder.
+18:59:34:596 [main] INFO  pages.CabsPage - Suggestions appeared for input.
+18:59:34:772 [main] INFO  pages.CabsPage - City Selected from suggestions.
+18:59:34:825 [main] INFO  pages.CabsPage - Selected city is verified
+18:59:36:334 [main] INFO  pages.CabsPage - Entered Manali in appeared placeholder.
+18:59:36:424 [main] INFO  pages.CabsPage - Suggestions appeared for input.
+18:59:36:573 [main] INFO  pages.CabsPage - City Selected from suggestions.
+18:59:36:607 [main] INFO  pages.CabsPage - Selected city is verified
+18:59:36:759 [main] INFO  pages.CabsPage - Clicked on Departure Date.
+18:59:37:905 [main] INFO  pages.CabsPage - Departure Date id Slelected to 02/04/2022
+18:59:37:943 [main] INFO  pages.CabsPage - Departure Date verified  Got : 2 Apr22
+18:59:38:265 [main] INFO  pages.CabsPage - Clicked on PickUp.
+18:59:39:136 [main] INFO  pages.CabsPage - Selected PickUP Time : 01:40 AM
+18:59:39:254 [main] INFO  pages.CabsPage - Pickup time verified got : 01:40 AM
+18:59:41:025 [main] INFO  pages.CabsPage - Clicked on Search Button.
+18:59:44:838 [main] INFO  pages.SearchPageCabs - Search List  appeared 
+18:59:45:221 [main] INFO  pages.SearchPageCabs - Selected SUV in cab type.
+18:59:45:221 [main] INFO  testCases.SearchResultFilters.FilterCabsByCabType - Filtering Cabs By Cabs Type---> Successful
+18:59:45:225 [main] INFO  testCases.VerifyRoomsandAdultsfromHotelsPage.VerifyRoomDetailBox - Verify Room and Guest box
+18:59:47:438 [main] INFO  BaseClasses.PagesBaseClass - Landed on MakeMyTrip Landing page.
+18:59:51:063 [main] INFO  pages.LandingPage - Login Pop Up Closed sucessfully.
+18:59:51:064 [main] INFO  pages.LandingPage - Clicked on Hotels icon.
+18:59:51:435 [main] INFO  pages.HotelsPage - Click on hotels Menu
+18:59:52:420 [main] INFO  pages.HotelsPage - Clicking on Room and Guests 
+18:59:52:484 [main] INFO  pages.HotelsPage - Room Detail Box is appeared for input value of adult  and children.
+18:59:52:484 [main] INFO  testCases.VerifyRoomsandAdultsfromHotelsPage.VerifyRoomDetailBox - Verification of Room and Guest box---> Successful
+18:59:52:494 [main] INFO  testCases.FillingCabsDetails.SelectDepartureDate - Departure Date Selection--->Successful
+18:59:55:231 [main] INFO  BaseClasses.PagesBaseClass - Landed on MakeMyTrip Landing page.
+18:59:57:935 [main] INFO  pages.LandingPage - Login Pop Up Closed sucessfully.
+18:59:58:231 [main] INFO  pages.LandingPage - Clicked on Cabs icon.
+18:59:58:836 [main] INFO  pages.CabsPage - Clicked on Departure Date.
+19:00:00:022 [main] INFO  pages.CabsPage - Departure Date id Slelected to 30/04/2022
+19:00:00:081 [main] INFO  pages.CabsPage - Departure Date verified  Got : 30 Apr22
+19:00:02:270 [main] INFO  BaseClasses.PagesBaseClass - Landed on MakeMyTrip Landing page.
+19:00:05:879 [main] INFO  pages.LandingPage - Login Pop Up Closed sucessfully.
+19:00:06:185 [main] INFO  pages.LandingPage - Clicked on Gifts page icon.
+19:00:06:189 [main] INFO  pages.GiftCardsPage - Shifting driver focus to the Gift cards page 
+19:00:07:725 [main] INFO  pages.GiftCardsPage - PASS : URL Verified [ Got -> https://www.makemytrip.com/gift-cards/ ]
+19:00:07:905 [main] INFO  pages.GiftCardsPage - Clicked on corporate Gift Card
+19:00:08:742 [main] INFO  pages.GiftCardsPage - Entered the Senders Name
+19:00:08:989 [main] INFO  pages.GiftCardsPage - Entered the Valid Email ID
+19:00:09:332 [main] INFO  pages.GiftCardsPage - Clicked on Buy Now Button
+19:00:09:452 [main] INFO  pages.GiftCardsPage - Getting error message when no mobile number is provided
+19:00:09:452 [main] INFO  BaseClasses.BaseTestClass - Capturing currentscreenshot ....
+19:00:09:838 [main] INFO  testCases.SearchResultFilters.FilterCabsByPrice - Filter Cabs By Price( Lowest to Highest)
+19:00:12:692 [main] INFO  BaseClasses.PagesBaseClass - Landed on MakeMyTrip Landing page.
+19:00:15:240 [main] INFO  pages.LandingPage - Login Pop Up Closed sucessfully.
+19:00:15:633 [main] INFO  pages.LandingPage - Clicked on Cabs icon.
+19:00:16:144 [main] INFO  pages.CabsPage - Clicked on FROM City Lebel
+19:00:17:420 [main] INFO  pages.CabsPage - Entered Delhi in appeared placeholder.
+19:00:17:527 [main] INFO  pages.CabsPage - Suggestions appeared for input.
+19:00:17:707 [main] INFO  pages.CabsPage - City Selected from suggestions.
+19:00:17:775 [main] INFO  pages.CabsPage - Selected city is verified
+19:00:19:298 [main] INFO  pages.CabsPage - Entered Manali in appeared placeholder.
+19:00:19:380 [main] INFO  pages.CabsPage - Suggestions appeared for input.
+19:00:19:521 [main] INFO  pages.CabsPage - City Selected from suggestions.
+19:00:19:563 [main] INFO  pages.CabsPage - Selected city is verified
+19:00:19:737 [main] INFO  pages.CabsPage - Clicked on Departure Date.
+19:00:20:757 [main] INFO  pages.CabsPage - Changing Calender month.
+19:00:20:986 [main] INFO  pages.CabsPage - Departure Date id Slelected to 24/05/2022
+19:00:21:035 [main] INFO  pages.CabsPage - Departure Date verified  Got : 24 May22
+19:00:21:265 [main] INFO  pages.CabsPage - Clicked on PickUp.
+19:00:22:600 [main] INFO  pages.CabsPage - Selected PickUP Time : 06:30 AM
+19:00:22:644 [main] INFO  pages.CabsPage - Pickup time verified got : 06:30 AM
+19:00:24:660 [main] INFO  pages.CabsPage - Clicked on Search Button.
+19:00:27:889 [main] INFO  pages.SearchPageCabs - Search List  appeared 
+19:00:28:178 [main] INFO  pages.SearchPageCabs - Selected SUV in cab type.
+19:00:28:351 [main] INFO  pages.SearchPageCabs - Clicked on the Sorted by dropdown arrow.
+19:00:28:548 [main] INFO  pages.SearchPageCabs - Price Lowest to Highest filter is selected.
+19:00:28:654 [main] INFO  pages.SearchPageCabs - Available Cabs at Price : 13878
+19:00:28:654 [main] INFO  pages.SearchPageCabs - Available Cabs at Price : 9087
+19:00:28:654 [main] INFO  pages.SearchPageCabs - Available Cabs at Price : 15575
+19:00:28:655 [main] INFO  pages.SearchPageCabs - Price verified
+19:00:28:655 [main] INFO  pages.SearchPageCabs - Lowest Price Available is : 13878
+19:00:28:655 [main] INFO  testCases.SearchResultFilters.FilterCabsByPrice - Filtering Cabs By Price( Lowest to Highest)---> Successful
+19:00:28:707 [main] INFO  BaseClasses.BaseTestClass - Tear Down Method Invoked. 
+19:00:28:707 [main] INFO  BaseClasses.BaseTestClass - Quiting Driver.....
+19:00:29:259 [main] INFO  BaseClasses.BaseTestClass - Flushing Report.

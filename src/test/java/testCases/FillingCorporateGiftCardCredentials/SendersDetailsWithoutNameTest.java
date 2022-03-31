@@ -15,7 +15,7 @@ import utilities.CaptureScreenshot;
 
 public class SendersDetailsWithoutNameTest extends BaseTestClass {
 	private static final Logger Logger = LogManager.getLogger(SendersDetailsWithoutNameTest.class);
-	@Test
+	@Test(groups= {"Regression"})
 	public void sendersDetailsWithoutName(){
 		logger = report.createTest("Senders Details Without Name");
 		Logger.info("Checking Warning Message Without Name");

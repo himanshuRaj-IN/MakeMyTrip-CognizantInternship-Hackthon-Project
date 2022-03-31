@@ -14,7 +14,7 @@ import utilities.CaptureScreenshot;
 
 public class SendersDetailsWithInvalidEmailTest extends BaseTestClass {
 	private static final Logger Logger = LogManager.getLogger(SendersDetailsWithInvalidEmailTest.class);
-	@Test
+	@Test(groups= {"Regression"})
 	public void sendersDetailsWithInValidEmail() throws InterruptedException {
 		logger = report.createTest("Senders Details With InValid Email");
 		Logger.info("Checking Warning Message With InValid Email");

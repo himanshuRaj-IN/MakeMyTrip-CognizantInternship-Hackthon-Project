@@ -5,12 +5,12 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import BaseClasses.BaseTestClass;
 import BaseClasses.PagesBaseClass;
-import testCases.HotelTab.CheckHotelOption;
+import testCases.HotelsPageSelection.CheckHotelOption;
 
 public class FilterCabsByPrice extends BaseTestClass{
 	private static final Logger Logger = LogManager.getLogger(FilterCabsByPrice.class);
 	
-	@Test
+	@Test(groups= {"Regression"})
 	public void filterCabsByCabType() {
 		logger = report.createTest("Filter Cabs By Price( Lowest to Highest) ");
 		Logger.info("Filter Cabs By Price( Lowest to Highest)");

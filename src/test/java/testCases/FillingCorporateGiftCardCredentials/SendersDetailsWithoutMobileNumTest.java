@@ -14,7 +14,7 @@ import utilities.CaptureScreenshot;
 public class SendersDetailsWithoutMobileNumTest extends BaseTestClass{
 	
 	
-	@Test
+	@Test(groups= {"Regression"})
 	public void sendersDetailsWithoutMobileNum() throws InterruptedException {
 		logger = report.createTest("Senders Details Without Mobile Number");
 		PagesBaseClass objPagesBaseClass = new PagesBaseClass(driver, logger);

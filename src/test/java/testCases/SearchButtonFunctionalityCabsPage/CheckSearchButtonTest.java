@@ -3,13 +3,13 @@ package testCases.SearchButtonFunctionalityCabsPage;
 import org.testng.annotations.Test;
 import BaseClasses.BaseTestClass;
 import BaseClasses.PagesBaseClass;
-import testCases.HotelTab.CheckHotelOption;
+import testCases.HotelsPageSelection.CheckHotelOption;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 public class CheckSearchButtonTest extends BaseTestClass{
 	private static final Logger Logger = LogManager.getLogger(CheckSearchButtonTest.class);
-	@Test
+	@Test(groups= {"Regression"})
 	public void checkSearchButton() {
 		logger = report.createTest("Check Search button available and enabled.");
 		Logger.info("Check Search button available and enabled.");

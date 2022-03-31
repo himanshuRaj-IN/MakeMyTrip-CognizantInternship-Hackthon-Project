@@ -17,7 +17,7 @@ public class SendersDetailsWithInvalidMobileNumTest extends BaseTestClass {
 	private static final Logger Logger = LogManager.getLogger(SendersDetailsWithInvalidMobileNumTest.class);
 
 	
-	@Test
+	@Test(groups= {"Regression"})
 	public void sendersDetailsWithInValidMobileNumber() {
 		logger = report.createTest("Senders Details With InValid Mobile Number");
 		Logger.info("Senders Details With InValid Mobile Number");

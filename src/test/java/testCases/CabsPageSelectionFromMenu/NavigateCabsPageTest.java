@@ -15,7 +15,7 @@ public class NavigateCabsPageTest extends BaseTestClass{
 	LandingPage landingPage;
 	CabsPage cabsPage;
 	
-	@Test
+	@Test(groups= {"Smoke"})
 	public void navigateCabsPageTest() {
 		Logger.info("Navigate Cabs Page Test Case initiated.");
 		logger = report.createTest("Navigate Cab Page");

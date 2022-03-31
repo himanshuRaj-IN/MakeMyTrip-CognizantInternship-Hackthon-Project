@@ -1,4 +1,4 @@
-package testCases.HotelTab;
+package testCases.HotelsPageSelection;
 
 import org.testng.annotations.Test;
 
@@ -20,7 +20,7 @@ public class CheckHotelOption extends BaseTestClass {
 	HotelsPage hotelsPage;
 	
 	
-	@Test
+	@Test(groups= {"Smoke"})
 	public void checkHotelOption() {
 		logger = report.createTest("Check Hotel Option");
 		Logger.info("Checking Hotels Option");
