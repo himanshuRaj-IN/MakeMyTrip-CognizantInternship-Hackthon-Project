@@ -17,3 +17,4 @@ buildNumber.properties
 
 #personal
 test-output
+/resources/

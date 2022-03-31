@@ -1,22 +1,5 @@
-14:16:41:864 [main] INFO  BaseClasses.BaseTestClass - Invoking Browser ......... 
-14:16:41:868 [main] INFO  BaseClasses.BaseTestClass - invoking Browser ....
-14:16:45:184 [main] INFO  BaseClasses.BaseTestClass - Creating Extent Report instance ........
-14:16:45:502 [main] INFO  testCases.CabsPageSelectionFromMenu.CheckCabsOption - Check Cabs Option Test Case initiated.
-14:16:50:763 [main] INFO  BaseClasses.PagesBaseClass - Landed on MakeMyTrip Landing page.
-14:16:51:376 [main] INFO  pages.LandingPage - Login Pop Up Closed sucessfully.
-14:16:51:500 [main] INFO  pages.LandingPage - PASS : Element is present on Landing page.
-14:16:51:557 [main] INFO  pages.LandingPage - PASS : Element is Enabled on Landing page.
-14:16:52:189 [main] INFO  BaseClasses.BaseTestClass - Screenshot captured.
-14:16:52:190 [main] INFO  BaseClasses.BaseTestClass - checkCabsOption : PASSED
-14:16:52:196 [main] INFO  testCases.CabsPageSelectionFromMenu.NavigateCabsPageTest - Navigate Cabs Page Test Case initiated.
-14:16:54:515 [main] INFO  BaseClasses.PagesBaseClass - Landed on MakeMyTrip Landing page.
-14:16:56:846 [main] INFO  pages.LandingPage - Login Pop Up Closed sucessfully.
-14:16:57:107 [main] INFO  pages.LandingPage - Clicked on Cabs icon.
-14:16:57:380 [main] INFO  pages.CabsPage - PASS : URL Verified [ Got -> https://www.makemytrip.com/cabs/ ]
-14:16:57:437 [main] INFO  pages.CabsPage - PASS : Sub heading Verified [ Got -> Cab Booking ]
-14:16:57:449 [main] INFO  pages.CabsPage - PASS : URL Verified [ Got -> https://www.makemytrip.com/cabs/ ]
-14:16:57:880 [main] INFO  BaseClasses.BaseTestClass - Screenshot captured.
-14:16:57:881 [main] INFO  BaseClasses.BaseTestClass - navigateCabsPageTest : PASSED
-14:16:57:912 [main] INFO  BaseClasses.BaseTestClass - Tear Down Method Invoked. 
-14:16:57:912 [main] INFO  BaseClasses.BaseTestClass - Quiting Driver.....
-14:16:58:409 [main] INFO  BaseClasses.BaseTestClass - Flushing Report.
+17:36:21:406 [main] INFO  testCases.FillingCabsDetails.PickupTimeSelection - Pickup-Time is Selection:--->Successful
+17:36:45:789 [main] INFO  testCases.FillingCabsDetails.SelectDepartureDate - Departure Date Selection--->Successful
+17:37:10:390 [main] INFO  BaseClasses.BaseTestClass - Tear Down Method Invoked. 
+17:37:10:391 [main] INFO  BaseClasses.BaseTestClass - Quiting Driver.....
+17:37:10:637 [main] INFO  BaseClasses.BaseTestClass - Flushing Report.
