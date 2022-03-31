@@ -70,7 +70,7 @@ public class HotelsPage extends PagesBaseClass{
 		try {
 			hotelsMenu.click();
 			logger.log(Status.PASS,"Click on hotels Menu");
-			Logger.info("Click on hotets Menu");
+			Logger.info("Click on hotels Menu");
 			
 		}catch (Exception e) {
 			reportFail("Exception Occured -> "+e.getMessage());

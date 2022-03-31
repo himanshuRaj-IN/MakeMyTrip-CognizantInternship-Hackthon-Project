@@ -1,15 +1,11 @@
 package testCases.FillingCorporateGiftCardCredentials;
 
-import java.io.IOException;
-
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
 import com.aventstack.extentreports.Status;
-
 import BaseClasses.BaseTestClass;
 import BaseClasses.PagesBaseClass;
-import utilities.CaptureScreenshot;
+
 
 public class SendersDetailsWithoutEmailTest extends BaseTestClass{
 	
